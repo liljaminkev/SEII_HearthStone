@@ -9,6 +9,8 @@
  * @author rodney
  */
 public abstract class Card {
+  //specialAmmount is something like +1 attack, 
+  //heal 2, poison -1, etc
     private int attackPoints, defensePoints, manaCost, specialAmmount;
     SpecialMove specialMove;
 
@@ -18,7 +20,7 @@ public abstract class Card {
         this.manaCost = manaCost;
     }
 
-    //constructor for cards with special values like poison, boost attack, etc
+    //constructor for cards with special ammounts like poison, boost attack, heal etc
     public Card(int attackPoints, int defensePoints, int manaCost, int specialAmmount){
         this.attackPoints = attackPoints;
         this.defensePoints = defensePoints;

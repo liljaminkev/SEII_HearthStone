@@ -1,3 +1,4 @@
+// move is used to book attack power of cards next to it
 public class BoostAttack implements SpecialMove{
     public void move()
     {
