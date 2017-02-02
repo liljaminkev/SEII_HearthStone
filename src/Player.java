@@ -9,7 +9,10 @@
  *
  * @author James
  */
+
 class Player {
+    private static final int MAXCRYSTALS = 5;
+    private int crystals;
     private PlayerHero hero;
     private Card[] deck;
     private Hand hand;
@@ -20,6 +23,7 @@ class Player {
         this.deck = deck;
         this.hand = hand;
         this.field = null; //The field is initailly empty
+        this.crystals = 0; //player starts with crystal meter empty
     }
 
     public PlayerHero getHero() {
@@ -59,6 +63,16 @@ class Player {
         
         return selectedMove;
     }
+
+    public int getCrystals() {
+        return crystals;
+    }
     
+    //crystal count will be incremented at the beginning of each turn to a set max value
+    public void incCrystals() {
+        if(this.crystals < MAXCRYSTALS){
+            this.crystals += 1;
+        }
+    }
     
 }
