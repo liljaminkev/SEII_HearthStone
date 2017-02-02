@@ -9,15 +9,18 @@
  * @author rodney
  */
 public abstract class Card {
-  //specialAmmount is something like +1 attack, 
-  //heal 2, poison -1, etc
-    private int attackPoints, defensePoints, manaCost, specialAmmount;
+    private int attackPoints;   // how much dmg the card does
+    private int defensePoints;  // how much health/def points the card has = 0 dead
+    private int manaCost;       // gem cost to play card
+    private int specialAmmount; //special powers like poison, heal, boost atk
+    private int cardTurn;   //card turn set to 1 at end of every turn
     SpecialMove specialMove;
 
     public Card(int attackPoints, int defensePoints, int manaCost){
         this.attackPoints = attackPoints;
         this.defensePoints = defensePoints;
         this.manaCost = manaCost;
+        this.cardTurn = 0;
     }
 
     //constructor for cards with special ammounts like poison, boost attack, heal etc
@@ -26,6 +29,7 @@ public abstract class Card {
         this.defensePoints = defensePoints;
         this.manaCost = manaCost;
         this.specialAmmount = specialAmmount;
+        this.cardTurn = 0;
     }
 
     // Getters
@@ -52,6 +56,9 @@ public abstract class Card {
     public void performSpecialMove(Card cardA, Card cardB){
         specialMove.move(cardA, cardB, specialAmmount);
     }
+    public int getCardTurn(){
+        return cardTurn;
+    }
 
     //setters
     public void setAttackPoints(int attackPoints){
@@ -65,5 +72,8 @@ public abstract class Card {
     }
     public void setSpecialMove(SpecialMove move){
         specialMove = move;
+    }
+    public void setCardTurn(int cardTurn){
+        this.cardTurn = cardTurn;
     }
 }

@@ -11,6 +11,10 @@
 public class PlayerHero {
     private int healthPoints = 30;
     private int armorPoints = 0;
+    private int gems = 0;
+    private int currentGems = 0;
+    private Hand playerHand = new Hand(); 
+    
     
     
     public PlayerHero(int healthPoints, int armorPoints){
@@ -40,8 +44,29 @@ public class PlayerHero {
             armorPoints -= damageAmount;
         }
     }
-    
     public void gainArmor(int gainAmount){
         armorPoints += gainAmount;
     }
+    
+    public void gainGem(){
+      gems++;
+    }
+    public void resetCurrentGems()
+    {
+      currentGems = gems;
+    }
+    public void useGems(int gemCost)
+    {
+      currentGems = currentGems - gemCost;
+    }
+    public int getNumGems()
+    {
+      return gems;
+    }
+    public int getCurrentGems()
+    {
+      return currentGems;
+    }
+    
+    
 }
