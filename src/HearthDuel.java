@@ -19,13 +19,15 @@ public class HearthDuel extends Duel{
     
     @Override
     protected Player findWinner() {
-    if(players.get(0).getHero().getHealthPoints() == 0){
-        return players.get(1);
-    }
-    else if (players.get(0).getHero().getHealthPoints() == 0){
-        return players.get(0);
-    }
-    else return null;
+        if(players.get(0).getHero().getHealthPoints() <= 0){
+            return players.get(1);
+        }
+        else if(players.get(1).getHero().getHealthPoints() <= 0){
+            return players.get(0);
+        }
+        else{
+            return null;
+        }
     }
     
 }
