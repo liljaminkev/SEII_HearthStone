@@ -11,7 +11,7 @@ public class BoostAttackTest extends TestCase
         assertEquals(4, romulo.getAttackPoints());
         //make new card
         DireWolfAlpha direWolf = new DireWolfAlpha();
-        direWolf.performSpecialability(romulo);
+        direWolf.performSpecialAbility(romulo);
         //atk after boost
         //assertEquals(2, timberWolf.getAttackPoints());
         assertEquals(5, romulo.getAttackPoints());
@@ -24,7 +24,7 @@ public class BoostAttackTest extends TestCase
         assertEquals(1, timberWolf.getAttackPoints());
         //make new card
         DireWolfAlpha direWolf = new DireWolfAlpha();
-        direWolf.performSpecialability(romulo, timberWolf);
+        direWolf.performSpecialAbility(romulo, timberWolf);
         //atk after boost
         assertEquals(5, romulo.getAttackPoints());
         assertEquals(2, timberWolf.getAttackPoints());
