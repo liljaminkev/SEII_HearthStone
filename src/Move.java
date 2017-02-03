@@ -9,11 +9,41 @@
  * @author rodney
  */
 public class Move {
-   public void placeCard(Card selectedCard){
-       
+  int cardIndexOfHandA;
+  int cardHandOfIndexB;
+  int battleFieldIndexA;
+  int battleFieldIndexB;
+  Player playerA;
+  Player playerB;
+
+   public void placeCard(int cardIndex, int battleFieldIndex)
+   {
+       cardIndexOfHandA = cardIndex;
+       battleFieldIndexA = battleFieldIndex;
    }
-   
-   public void attackCard(Card selectedCard){
-       
+
+   //attack card takes two players and
+   public void attackCard(int battleFieldIndexA, int battleFieldIndexB)
+   {
+     this.battleFieldIndexA = battleFieldIndexA;
+     this.battleFieldIndexB = battleFieldIndexB;
    }
+
+   public int getIndexA()
+   {
+     return cardIndexOfHandA;
+   }
+   public int getIndexB()
+   {
+     return cardHandOfIndexB;
+   }
+   public int getBattleFieldIndexA()
+   {
+     return battleFieldIndexA;
+   }
+   public int getBattleFieldIndexB()
+   {
+     return battleFieldIndexB;
+   }
+
 }
