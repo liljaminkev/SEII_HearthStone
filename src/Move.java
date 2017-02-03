@@ -9,8 +9,8 @@
  * @author rodney
  */
 public class Move {
-  int cardIndexA;
-  int cardIndexB;
+  int cardIndexOfHandA;
+  int cardHandOfIndexB;
   int battleFieldIndexA;
   int battleFieldIndexB;
   Player playerA;
@@ -18,7 +18,7 @@ public class Move {
   
    public void placeCard(int cardIndex, int battleFieldIndex)
    {
-       cardIndexA = cardIndex;
+       cardIndexOfHandA = cardIndex;
        battleFieldIndexA = battleFieldIndex;
    }
    
@@ -45,7 +45,5 @@ public class Move {
    {
      return battleFieldIndexB;
    }
-   
-   
    
 }

@@ -1,7 +1,7 @@
 import junit.framework.TestCase;
 public class DeckTest extends TestCase
 {
-  private Deck deck;
+  Deck deck;
   DireWolfAlpha dire;
   
   public void testAddingOneCard()
