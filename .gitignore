@@ -2,7 +2,7 @@
 *.class
 *.properties
 *.xml
-nbproject
+/nbproject
 .DS_Store
 
 
@@ -12,7 +12,7 @@ nbproject
 
 *.properties
 
-nbproject/project.properties
+/nbproject/project.properties
 
-nbproject/private/private.properties
+/nbproject/private/private.properties
 /build/
