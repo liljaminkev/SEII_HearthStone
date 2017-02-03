@@ -86,6 +86,13 @@ class Player {
         if(this.crystals < MAXCRYSTALS){
             this.crystals += 1;
         }
+        else{
+            crystals = MAXCRYSTALS;
+        }
+    }
+    
+    public int getCrystals(){
+        return crystals;
     }
 
 }

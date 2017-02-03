@@ -11,6 +11,8 @@ import java.util.List;
  * @author James
  */
 public class HearthDuel extends Duel{
+    
+    int currentPlayer = 0;
 
     public HearthDuel(List<Player> _players) {
         super(_players);
@@ -27,6 +29,27 @@ public class HearthDuel extends Duel{
         }
         else{
             return null;
+        }
+    }
+    
+     @Override
+     protected void beforeTurn(){
+        Player player = players.get(currentPlayer);
+        player.incCrystals();
+        player.setCurrentCrystals(player.getCrystals());
+        
+    }
+     
+    @Override
+    protected void afterTurn(){
+        Player player = players.get(currentPlayer);
+        player.getBattleField().checkBattleFieldCards();
+        
+        if(currentPlayer == 0){
+            currentPlayer = 1;
+        }
+        else{
+            currentPlayer = 0;
         }
     }
     

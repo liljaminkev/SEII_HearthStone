@@ -13,5 +13,7 @@ public class CoreHound extends Card{
         super(9, 5, 7);
     }
     
-    
+    public String toString(){
+        return "Core Hound";
+    }
 }
