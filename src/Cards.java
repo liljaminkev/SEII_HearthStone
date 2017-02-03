@@ -13,7 +13,7 @@ public abstract class Cards
     }
 
     //add new card to hand
-    public void addTo(int index, Card newCard)
+    public void addCard(int index, Card newCard)
     {
       cards.add(index, newCard);
       numCards++;
@@ -30,7 +30,7 @@ public abstract class Cards
         return numCards;
     }
 
-    public void removeFrom(Card cardObject)
+    public void removeCard(Card cardObject)
     {
       cards.remove(cardObject);
       numCards--;

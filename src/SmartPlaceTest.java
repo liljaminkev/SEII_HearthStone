@@ -57,10 +57,10 @@ public class SmartPlaceTest extends TestCase{
         BloodfenRaptor bloodfenRaptor = new BloodfenRaptor();
         Romulo romulo = new Romulo();
         BluegillWarrior bluegillWarrior = new BluegillWarrior();
-        deck.addTo(0,bloodfenRaptor);
-        hand.addTo(hand.getNumCards(), bloodfenRaptor);
-        hand.addTo(hand.getNumCards(), bluegillWarrior);
-        hand.addTo(hand.getNumCards(), romulo);
+        deck.addCard(0,bloodfenRaptor);
+        hand.addCard(hand.getNumCards(), bloodfenRaptor);
+        hand.addCard(hand.getNumCards(), bluegillWarrior);
+        hand.addCard(hand.getNumCards(), romulo);
         player = new Player(hero, deck, hand);
     }
 }
