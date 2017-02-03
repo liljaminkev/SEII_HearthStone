@@ -9,12 +9,19 @@
  * @author rodney
  */
 public abstract class Card {
+<<<<<<< HEAD
     private int attackPoints;   // how much dmg the card does
     private int defensePoints;  // how much health/def points the card has = 0 dead
     private int manaCost;       // gem cost to play card
     private int specialAmmount; //special powers like poison, heal, boost atk
     private int cardTurn;   //card turn set to 1 at end of every turn
     SpecialMove specialMove;
+=======
+  //specialAmmount is something like +1 attack, 
+  //heal 2, poison -1, etc
+    private int attackPoints, defensePoints, manaCost, specialAmmount;
+    SpecialAbility specialAbility;
+>>>>>>> master
 
     public Card(int attackPoints, int defensePoints, int manaCost){
         this.attackPoints = attackPoints;
@@ -45,16 +52,21 @@ public abstract class Card {
         return manaCost;
     }
 
-    public void performSpecialMove(){
-        specialMove.move();
+    public void performSpecialAbility(){
+        specialAbility.ability();
     }
 
-    public void performSpecialMove(Card cardA){
-        specialMove.move(cardA, specialAmmount);
+    public void performSpecialAbility(Card cardA){
+        specialAbility.ability(cardA, specialAmmount);
     }
 
-    public void performSpecialMove(Card cardA, Card cardB){
-        specialMove.move(cardA, cardB, specialAmmount);
+    public void performSpecialAbility(Card cardA, Card cardB){
+        specialAbility.ability(cardA, cardB, specialAmmount);
+    }
+    
+    //this method allows a card to increment the players crystal count
+    public void performSpecialMove(Card cardA, Player playerA){
+        specialMove.move(cardA, playerA);
     }
     public int getCardTurn(){
         return cardTurn;
@@ -70,8 +82,8 @@ public abstract class Card {
     public void setManaCost(int manaCost){
         this.manaCost = manaCost;
     }
-    public void setSpecialMove(SpecialMove move){
-        specialMove = move;
+    public void setSpecialAbility(SpecialAbility ability){
+        specialAbility = ability;
     }
     public void setCardTurn(int cardTurn){
         this.cardTurn = cardTurn;
