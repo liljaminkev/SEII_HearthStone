@@ -6,14 +6,14 @@ public class DeckTest extends TestCase
 
   public void testAddingOneCard()
   {
-    //assertEquals(dire.getAttackPoints(), deck.showCard(0).getAttackPoints());
+    assertEquals(dire.getAttackPoints(), deck.showCard(0).getAttackPoints());
   }
 
   @Override
   public void setUp()
   {
       deck = new Deck();
-      deck.addToDeck(dire);
+      deck.addTo(dire);
   }
 
 }
