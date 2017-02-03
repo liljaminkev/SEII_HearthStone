@@ -3,20 +3,23 @@ import java.util.List;
 public abstract class Cards
 {
     private List<Card> cards;
-    private int numCards;
-
 
     public Cards()
     {
       cards = new ArrayList<Card>();
-      numCards = 0;
+
     }
+
 
     //add new card to hand
     public void addCard(int index, Card newCard)
     {
       cards.add(index, newCard);
-      numCards++;
+    }
+    
+    public void addCard(Card newCard)
+    {
+      cards.add(newCard);
     }
 
     //returns a card from index location
@@ -25,14 +28,15 @@ public abstract class Cards
       return cards.get(index);
     }
 
+    //Returns the amount of elements in array.
     public int getNumCards()
     {
-        return numCards;
+        return cards.size();
     }
+
 
     public void removeCard(Card cardObject)
     {
       cards.remove(cardObject);
-      numCards--;
     }
 }
