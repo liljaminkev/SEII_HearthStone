@@ -12,24 +12,24 @@ public abstract class Card {
 
     private int attackPoints;   // how much dmg the card does
     private int defensePoints;  // how much health/def points the card has = 0 dead
-    private int manaCost;       // gem cost to play card
+    private int gemCost;       // gem cost to play card
     private int specialAmmount; //special powers like poison, heal, boost atk
     private int cardTurn;   //card turn set to 1 at end of every turn
     SpecialAbility specialAbility;
 
 
-    public Card(int attackPoints, int defensePoints, int manaCost){
+    public Card(int attackPoints, int defensePoints, int gemCost){
         this.attackPoints = attackPoints;
         this.defensePoints = defensePoints;
-        this.manaCost = manaCost;
+        this.gemCost = gemCost;
         this.cardTurn = 0;
     }
 
     //constructor for cards with special ammounts like poison, boost attack, heal etc
-    public Card(int attackPoints, int defensePoints, int manaCost, int specialAmmount){
+    public Card(int attackPoints, int defensePoints, int gemCost, int specialAmmount){
         this.attackPoints = attackPoints;
         this.defensePoints = defensePoints;
-        this.manaCost = manaCost;
+        this.gemCost = gemCost;
         this.specialAmmount = specialAmmount;
         this.cardTurn = 0;
     }
@@ -43,8 +43,8 @@ public abstract class Card {
         return defensePoints;
     }
 
-    public int getManaCost(){
-        return manaCost;
+    public int getGemCost(){
+        return gemCost;
     }
 
     public void performSpecialAbility(){
@@ -75,8 +75,8 @@ public abstract class Card {
     public void setDefensePoints(int defensePoints){
         this.defensePoints = defensePoints;
     }
-    public void setManaCost(int manaCost){
-        this.manaCost = manaCost;
+    public void setGemCost(int gemCost){
+        this.gemCost = gemCost;
     }
     public void setSpecialAbility(SpecialAbility ability){
         specialAbility = ability;

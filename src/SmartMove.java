@@ -2,8 +2,8 @@
 public class SmartMove implements Strategy
 {
     //returns card with lowest wait time
-    public Move getLegalMove(Player playerA)
-    {
+    public int getLegalMove(Player playerA)
+    {/*
         int lowestWaitTime = 100;
         Move SmartMove = new Move();
         WaitArea testField = null;
@@ -23,5 +23,6 @@ public class SmartMove implements Strategy
         testField = SmartMove.move(playerA, cardIndex);
 
         return SmartMove;
+        */
     }
 }

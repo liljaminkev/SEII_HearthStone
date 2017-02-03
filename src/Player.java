@@ -13,6 +13,7 @@
 class Player {
     private static final int MAXCRYSTALS = 5;
     private int crystals;
+    private int currentCrystalCount;
     private PlayerHero hero;
     private Deck deck;
     private Hand hand;
@@ -20,10 +21,10 @@ class Player {
 
     public Player(PlayerHero hero, Deck deck, Hand hand) {
         this.hero = hero;
-        //this.deck = deck;
+        this.deck = deck;
         this.hand = hand;
-        this.field = null; //The field is initailly empty
-        this.crystals = 0; //player starts with crystal meter empty
+        this.field = new BattleField(); //The field is initailly empty
+        crystals = 0; //player starts with crystal meter empty
     }
 
     public PlayerHero getHero() {
@@ -50,7 +51,7 @@ class Player {
         this.hand = hand;
     }
 
-    public BattleField getField() {
+    public BattleField getBattleField() {
         return field;
     }
 
@@ -63,9 +64,21 @@ class Player {
 
         return selectedMove;
     }
+    public void setCurrentCrystals(int num){
+        currentCrystalCount = num;
+    }
+    public int getCurrentCrystals() {
+        return currentCrystalCount;
+    }
 
-    public int getCrystals() {
-        return crystals;
+    public void resetCurrentCrystals()
+    {
+        currentCrystalCount = crystals;
+    }
+
+    public void decCrystals(int dec)
+    {
+        currentCrystalCount = currentCrystalCount - dec;
     }
 
     //crystal count will be incremented at the beginning of each turn to a set max value
