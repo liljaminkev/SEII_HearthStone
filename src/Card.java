@@ -52,6 +52,11 @@ public abstract class Card {
     public void performSpecialAbility(Card cardA, Card cardB){
         specialAbility.ability(cardA, cardB, specialAmmount);
     }
+    
+    //this method allows a card to increment the players crystal count
+    public void performSpecialMove(Card cardA, Player playerA){
+        specialMove.move(cardA, playerA);
+    }
 
     //setters
     public void setAttackPoints(int attackPoints){
