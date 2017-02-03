@@ -26,7 +26,8 @@ public class DireWolfAlphaTest extends TestCase
         assertEquals(1, timberWolf.getAttackPoints());
         assertEquals(4, romulo.getAttackPoints());
         //make new card
-        DireWolfAlpha direWolf = new DireWolfAlpha(timberWolf, romulo);
+        DireWolfAlpha direWolf = new DireWolfAlpha();
+        direWolf.performSpecialAbility(timberWolf, romulo);
         //atk after boost
         assertEquals(2, timberWolf.getAttackPoints());
         assertEquals(5, romulo.getAttackPoints());
@@ -38,7 +39,8 @@ public class DireWolfAlphaTest extends TestCase
         //atk before boost
         assertEquals(4, romulo.getAttackPoints());
         //make new card
-        DireWolfAlpha direWolf = new DireWolfAlpha(romulo);
+        DireWolfAlpha direWolf = new DireWolfAlpha();
+        direWolf.performSpecialAbility(romulo);
         //atk after boost
         assertEquals(5, romulo.getAttackPoints());
     }
