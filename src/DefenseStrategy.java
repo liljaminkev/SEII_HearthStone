@@ -9,9 +9,10 @@
  * @author rodney
  */
 public class DefenseStrategy implements Strategy{
-    
+    /*
     @Override
     public Move move(){
         return null;
     }
+    */
 }
