@@ -15,7 +15,11 @@ public abstract class Cards
     public void addCard(int index, Card newCard)
     {
       cards.add(index, newCard);
-      numCards++;
+    }
+    
+    public void addCard(Card newCard)
+    {
+      cards.add(newCard);
     }
 
     //returns a card from index location
@@ -25,7 +29,7 @@ public abstract class Cards
     }
 
     //Returns the amount of elements in array.
-    public int getSize()
+    public int getNumCards()
     {
         return cards.size();
     }

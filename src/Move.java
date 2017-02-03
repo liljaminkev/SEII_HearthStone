@@ -14,8 +14,8 @@ public class Move {
    {
        Card tempCard;
        tempCard = playerHand.showCard(handIndex);
-       playerHand.removeFrom(tempCard);
-       battleField.addTo(fieldIndex, tempCard);
+       playerHand.removeCard(tempCard);
+       battleField.addCard(fieldIndex, tempCard);
    }
 
 /*
