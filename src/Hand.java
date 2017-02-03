@@ -30,7 +30,7 @@ public class Hand{
   {
       return numCards;
   }
-  
+
   public void removeFromHand(int cardIndex)
   {
     hand.add(cardIndex);

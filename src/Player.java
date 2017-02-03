@@ -14,13 +14,13 @@ class Player {
     private static final int MAXCRYSTALS = 5;
     private int crystals;
     private PlayerHero hero;
-    private Card[] deck;
+    private Deck deck;
     private Hand hand;
     private BattleField field;
 
-    public Player(PlayerHero hero, Card[] deck, Hand hand) {
+    public Player(PlayerHero hero, Deck deck, Hand hand) {
         this.hero = hero;
-        this.deck = deck;
+        //this.deck = deck;
         this.hand = hand;
         this.field = null; //The field is initailly empty
         this.crystals = 0; //player starts with crystal meter empty
@@ -30,7 +30,7 @@ class Player {
         return hero;
     }
 
-    public Card[] getDeck() {
+    public Deck getDeck() {
         return deck;
     }
 
@@ -42,7 +42,7 @@ class Player {
         this.hero = hero;
     }
 
-    public void setDeck(Card[] deck) {
+    public void setDeck(Deck deck) {
         this.deck = deck;
     }
 
@@ -50,11 +50,11 @@ class Player {
         this.hand = hand;
     }
 
-    public Field getField() {
+    public BattleField getField() {
         return field;
     }
 
-    public void setField(Field field) {
+    public void setField(BattleField field) {
         this.field = field;
     }
 

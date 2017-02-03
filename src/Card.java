@@ -59,12 +59,11 @@ public abstract class Card {
         specialAbility.ability(cardA, cardB, specialAmmount);
     }
 
-    /*
     //this method allows a card to increment the players crystal count
     public void performSpecialMove(Card cardA, Player playerA){
-        specialAbility.Ability(cardA, playerA);
+        specialAbility.ability(cardA, playerA);
     }
-    */
+
     public int getCardTurn(){
         return cardTurn;
     }
