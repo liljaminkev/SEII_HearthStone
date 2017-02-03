@@ -9,19 +9,16 @@
  * @author rodney
  */
 public class Move {
-  int cardIndexOfHandA;
-  int cardHandOfIndexB;
-  int battleFieldIndexA;
-  int battleFieldIndexB;
-  Player playerA;
-  Player playerB;
 
-   public void placeCard(int cardIndex, int battleFieldIndex)
+   public void placeCard(Hand playerHand, int handIndex, BattleField battleField, int fieldIndex)
    {
-       cardIndexOfHandA = cardIndex;
-       battleFieldIndexA = battleFieldIndex;
+       Card tempCard;
+       tempCard = playerHand.showCard(handIndex);
+       playerHand.removeFrom(tempCard);
+       battleField.addTo(fieldIndex, tempCard);
    }
 
+/*
    //attack card takes two players and
    public void attackCard(int battleFieldIndexA, int battleFieldIndexB)
    {
@@ -45,5 +42,5 @@ public class Move {
    {
      return battleFieldIndexB;
    }
-
+*/
 }

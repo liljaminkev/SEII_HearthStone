@@ -3,7 +3,7 @@ import java.util.List;
 public abstract class Cards
 {
     private List<Card> cards;
-    int numCards;
+    private int numCards;
 
 
     public Cards()
@@ -13,9 +13,9 @@ public abstract class Cards
     }
 
     //add new card to hand
-    public void addTo(Card newCard)
+    public void addTo(int index, Card newCard)
     {
-      cards.add(newCard);
+      cards.add(index, newCard);
       numCards++;
     }
 
@@ -30,9 +30,9 @@ public abstract class Cards
         return numCards;
     }
 
-    public void removeFrom(int cardIndex)
+    public void removeFrom(Card cardObject)
     {
-      cards.remove(cardIndex);
+      cards.remove(cardObject);
       numCards--;
     }
 }
