@@ -1,13 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author rodney
- */
+
 public class Move {
 
    public void placeCard(Hand playerHand, int handIndex, BattleField battleField, int fieldIndex)
@@ -17,30 +9,22 @@ public class Move {
        playerHand.removeFrom(tempCard);
        battleField.addTo(fieldIndex, tempCard);
    }
-
-/*
-   //attack card takes two players and
-   public void attackCard(int battleFieldIndexA, int battleFieldIndexB)
+   
+      //attack card takes two players and
+   public void attackMinion(int battleFieldIndexA, int battleFieldIndexB, BattleField battleFieldA, BattleField battleFieldB)
    {
-     this.battleFieldIndexA = battleFieldIndexA;
-     this.battleFieldIndexB = battleFieldIndexB;
+       int attackPoints, defensePoints;
+       
+       defensePoints= battleFieldB.showCard(battleFieldIndexB).getDefensePoints();
+       attackPoints= battleFieldA.showCard(battleFieldIndexA).getAttackPoints();
+       
+       battleFieldB.cards.get(battleFieldIndexB).setDefensePoints(defensePoints-attackPoints);
+   }
+   
+   //attack PlayerHero
+   public void attackHero(int battleField, BattleField battlefield, PlayerHero player)
+   {       
+       player.damageHealth(battlefield.showCard(battleField).getAttackPoints());  
    }
 
-   public int getIndexA()
-   {
-     return cardIndexOfHandA;
-   }
-   public int getIndexB()
-   {
-     return cardHandOfIndexB;
-   }
-   public int getBattleFieldIndexA()
-   {
-     return battleFieldIndexA;
-   }
-   public int getBattleFieldIndexB()
-   {
-     return battleFieldIndexB;
-   }
-*/
 }
