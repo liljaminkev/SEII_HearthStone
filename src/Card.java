@@ -12,7 +12,7 @@ public abstract class Card {
   //specialAmmount is something like +1 attack, 
   //heal 2, poison -1, etc
     private int attackPoints, defensePoints, manaCost, specialAmmount;
-    SpecialMove specialMove;
+    SpecialAbility specialAbility;
 
     public Card(int attackPoints, int defensePoints, int manaCost){
         this.attackPoints = attackPoints;
@@ -41,16 +41,16 @@ public abstract class Card {
         return manaCost;
     }
 
-    public void performSpecialMove(){
-        specialMove.move();
+    public void performSpecialAbility(){
+        specialAbility.ability();
     }
 
-    public void performSpecialMove(Card cardA){
-        specialMove.move(cardA, specialAmmount);
+    public void performSpecialAbility(Card cardA){
+        specialAbility.ability(cardA, specialAmmount);
     }
 
-    public void performSpecialMove(Card cardA, Card cardB){
-        specialMove.move(cardA, cardB, specialAmmount);
+    public void performSpecialAbility(Card cardA, Card cardB){
+        specialAbility.ability(cardA, cardB, specialAmmount);
     }
 
     //setters
@@ -63,7 +63,7 @@ public abstract class Card {
     public void setManaCost(int manaCost){
         this.manaCost = manaCost;
     }
-    public void setSpecialMove(SpecialMove move){
-        specialMove = move;
+    public void setSpecialAbility(SpecialAbility ability){
+        specialAbility = ability;
     }
 }
