@@ -33,9 +33,9 @@ public class MoveTest extends TestCase
         move = new Move();
         battleField = new BattleField();
         hand = new Hand();
-        hand.addTo(hand.getNumCards(), dire);
-        hand.addTo(hand.getNumCards(), romulo);
-        hand.addTo(hand.getNumCards(), dire);
+        hand.addCard(hand.getNumCards(), dire);
+        hand.addCard(hand.getNumCards(), romulo);
+        hand.addCard(hand.getNumCards(), dire);
     }
 
 }

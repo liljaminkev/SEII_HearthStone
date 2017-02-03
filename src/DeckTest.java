@@ -13,7 +13,7 @@ public class DeckTest extends TestCase
   public void setUp()
   {
       deck = new Deck();
-      deck.addTo(dire);
+      deck.addCard(dire);
   }
 
 }
