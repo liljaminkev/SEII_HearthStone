@@ -15,27 +15,27 @@ public class Move {
   int battleFieldIndexB;
   Player playerA;
   Player playerB;
-  
+
    public void placeCard(int cardIndex, int battleFieldIndex)
    {
        cardIndexOfHandA = cardIndex;
        battleFieldIndexA = battleFieldIndex;
    }
-   
-   //attack card takes two players and 
+
+   //attack card takes two players and
    public void attackCard(int battleFieldIndexA, int battleFieldIndexB)
    {
      this.battleFieldIndexA = battleFieldIndexA;
      this.battleFieldIndexB = battleFieldIndexB;
    }
-   
+
    public int getIndexA()
    {
-     return cardIndexA;
+     return cardIndexOfHandA;
    }
    public int getIndexB()
    {
-     return cardIndexB;
+     return cardHandOfIndexB;
    }
    public int getBattleFieldIndexA()
    {
@@ -45,5 +45,5 @@ public class Move {
    {
      return battleFieldIndexB;
    }
-   
+
 }

@@ -16,7 +16,7 @@ class Player {
     private PlayerHero hero;
     private Card[] deck;
     private Hand hand;
-    private Field field;
+    private BattleField field;
 
     public Player(PlayerHero hero, Card[] deck, Hand hand) {
         this.hero = hero;
@@ -57,22 +57,22 @@ class Player {
     public void setField(Field field) {
         this.field = field;
     }
-    
+
     public Move pickMove(){
         Move selectedMove = new Move();
-        
+
         return selectedMove;
     }
 
     public int getCrystals() {
         return crystals;
     }
-    
+
     //crystal count will be incremented at the beginning of each turn to a set max value
     public void incCrystals() {
         if(this.crystals < MAXCRYSTALS){
             this.crystals += 1;
         }
     }
-    
+
 }
