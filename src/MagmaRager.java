@@ -8,11 +8,9 @@
  *
  * @author rodney
  */
-public class DefenseStrategy implements Strategy{
-    /*
-    @Override
-    public Move move(){
-        return null;
+public class MagmaRager extends Card{
+    public MagmaRager(){
+        super(5, 1, 3);
     }
-    */
+    
 }

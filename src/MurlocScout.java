@@ -8,11 +8,9 @@
  *
  * @author rodney
  */
-public class DefenseStrategy implements Strategy{
-    /*
-    @Override
-    public Move move(){
-        return null;
+public class MurlocScout extends Card{
+
+    public MurlocScout(){
+        super(1, 1, 0);
     }
-    */
 }

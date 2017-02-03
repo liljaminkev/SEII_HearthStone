@@ -13,24 +13,25 @@
 class Player {
     private static final int MAXCRYSTALS = 5;
     private int crystals;
+    private int currentCrystalCount;
     private PlayerHero hero;
-    private Card[] deck;
+    private Deck deck;
     private Hand hand;
-    private Field field;
+    private BattleField field;
 
-    public Player(PlayerHero hero, Card[] deck, Hand hand) {
+    public Player(PlayerHero hero, Deck deck, Hand hand) {
         this.hero = hero;
         this.deck = deck;
         this.hand = hand;
-        this.field = null; //The field is initailly empty
-        this.crystals = 0; //player starts with crystal meter empty
+        this.field = new BattleField(); //The field is initailly empty
+        crystals = 0; //player starts with crystal meter empty
     }
 
     public PlayerHero getHero() {
         return hero;
     }
 
-    public Card[] getDeck() {
+    public Deck getDeck() {
         return deck;
     }
 
@@ -42,7 +43,7 @@ class Player {
         this.hero = hero;
     }
 
-    public void setDeck(Card[] deck) {
+    public void setDeck(Deck deck) {
         this.deck = deck;
     }
 
@@ -50,29 +51,41 @@ class Player {
         this.hand = hand;
     }
 
-    public Field getField() {
+    public BattleField getBattleField() {
         return field;
     }
 
-    public void setField(Field field) {
+    public void setField(BattleField field) {
         this.field = field;
     }
-    
+
     public Move pickMove(){
         Move selectedMove = new Move();
-        
+
         return selectedMove;
     }
-
-    public int getCrystals() {
-        return crystals;
+    public void setCurrentCrystals(int num){
+        currentCrystalCount = num;
     }
-    
+    public int getCurrentCrystals() {
+        return currentCrystalCount;
+    }
+
+    public void resetCurrentCrystals()
+    {
+        currentCrystalCount = crystals;
+    }
+
+    public void decCrystals(int dec)
+    {
+        currentCrystalCount = currentCrystalCount - dec;
+    }
+
     //crystal count will be incremented at the beginning of each turn to a set max value
     public void incCrystals() {
         if(this.crystals < MAXCRYSTALS){
             this.crystals += 1;
         }
     }
-    
+
 }

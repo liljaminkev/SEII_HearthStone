@@ -7,20 +7,23 @@
 /**
  *
  * @author James
- * 
+ *
  */
-public class BluegillWarrior extends Card implements SpecialMove{
+
+//public class BluegillWarrior extends Card implements SpecialMove{
+
+public class BluegillWarrior extends Card{
     private int attackPoints, defensePoints, manaCost;
-    
+
     /**
      *
      */
     public BluegillWarrior() {
         super(2, 1, 2);
     }
-    
-    //implement 
 
+    //implement
+/*
     @Override
     public void move() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -35,14 +38,16 @@ public class BluegillWarrior extends Card implements SpecialMove{
     public void move(Card a, Card b, int specialAmmount) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+*/
 
-    /**
+    /*
      *
      * @param p
      */
+     /*
     @Override
     public void move(Card a, Player p) {
         p.incCrystals();
     }
-    
+    */
 }

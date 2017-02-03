@@ -8,11 +8,10 @@
  *
  * @author rodney
  */
-public class DefenseStrategy implements Strategy{
-    /*
-    @Override
-    public Move move(){
-        return null;
+public class CoreHound extends Card{
+    public CoreHound(){
+        super(9, 5, 7);
     }
-    */
+    
+    
 }
