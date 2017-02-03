@@ -3,20 +3,45 @@ import java.util.List;
 public abstract class Cards
 {
     private List<Card> cards;
-    private int numCards;
-
-
+    
     public Cards()
     {
       cards = new ArrayList<Card>();
-      numCards = 0;
+     
     }
-
-    //add new card to hand
-    public void addTo(int index, Card newCard)
-    {
-      cards.add(index, newCard);
-      numCards++;
+    
+    List<Card> returnCards(){
+        return cards;
+    }
+    
+    //Method to create available cards
+    public void createAndAddCards(){
+        Card coreHound = new CoreHound();
+        cards.add(coreHound);
+        
+        Card magmaRager = new MagmaRager();
+        cards.add(magmaRager);
+        
+        Card murlocScout = new MurlocScout();
+        cards.add(murlocScout);
+        
+        Card bloodfenRaptor = new BloodfenRaptor();
+        cards.add(bloodfenRaptor);
+        
+        Card bluegillWarrior = new BluegillWarrior();
+        cards.add(bluegillWarrior);
+        
+        Card direWolfAlpha = new DireWolfAlpha();
+        cards.add(direWolfAlpha);
+        
+        Card romulo = new Romulo();
+        cards.add(romulo);
+        
+        Card timberWolf = new TimberWolf();
+        cards.add(timberWolf);
+        
+        Card lightsJustice = new LightsJustice();
+        cards.add(lightsJustice);
     }
 
     //returns a card from index location
@@ -25,14 +50,15 @@ public abstract class Cards
       return cards.get(index);
     }
 
-    public int getNumCards()
+    //Returns the amount of elements in array.
+    public int getSize()
     {
-        return numCards;
+        return cards.size();
     }
 
+    //Removes a card from the card "pile"
     public void removeFrom(Card cardObject)
     {
       cards.remove(cardObject);
-      numCards--;
     }
 }

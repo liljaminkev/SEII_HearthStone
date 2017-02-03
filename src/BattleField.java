@@ -3,22 +3,24 @@
 import java.util.ArrayList;
 import java.util.List;
 public class BattleField /*extends Cards*/{
-    protected List<Card> battlefield = new ArrayList<Card>();
+    protected List<Card> battleField = new ArrayList<Card>();
     
     // Setters
     public void addCard(Card cardToPlay){
-        battlefield.add(cardToPlay);
+        battleField.add(cardToPlay);
     }
     
     public void removeCard(Card cardToRemove){
-        battlefield.remove(cardToRemove);
+        battleField.remove(cardToRemove);
     }
     
     // Getters
-    
+    public List<Card> returnBattleField(){
+        return battleField;
+    }
     // Helpers
     public void checkBattleFieldCards(){
-        for(Card selectedCard : battlefield){
+        for(Card selectedCard : battleField){
             if(selectedCard.getDefensePoints() <= 0){
                 removeCard(selectedCard);
             }
