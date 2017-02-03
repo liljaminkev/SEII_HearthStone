@@ -40,6 +40,7 @@ public abstract class Duel {
      * Run this code at the start of a player's turn
      */
     protected void beforeTurn() {
+        
     }
 
     /**
