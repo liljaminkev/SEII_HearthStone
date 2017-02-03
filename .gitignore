@@ -3,3 +3,5 @@
 *.properties
 *.xml
 nbproject
+.Ds_Store
+
