@@ -4,7 +4,7 @@ import junit.framework.TestCase;
 public class MoveAttackTest extends TestCase
 { 
 
-    PlayerHero playerB;
+    Player playerB;
     BattleField battleFieldplayerA;
     BattleField battleFieldplayerB;
     Hand handplayerA;
@@ -30,9 +30,9 @@ public class MoveAttackTest extends TestCase
     {
         assertEquals(1,battleFieldplayerA.getNumCards());
         assertEquals(dire.getAttackPoints(),battleFieldplayerA.showCard(0).getAttackPoints());
-        assertTrue(playerB.getHealthPoints()>0);
+        assertTrue(playerB.getHero().getHealthPoints()>0);
         move.attackHero(0,battleFieldplayerA, playerB);
-        assertTrue(playerB.getHealthPoints()<30);
+        assertTrue(playerB.getHero().getHealthPoints()<30);
     }
         
     @Override
