@@ -22,9 +22,9 @@ public class Move {
    }
    
    //attack PlayerHero
-   public void attackHero(int battleField, BattleField battlefield, PlayerHero player)
+   public void attackHero(int battleField, BattleField battlefield, Player player)
    {       
-       player.damageHealth(battlefield.showCard(battleField).getAttackPoints());  
+       player.getHero().damageHealth(battlefield.showCard(battleField).getAttackPoints());  
    }
 
 }
