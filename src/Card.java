@@ -63,6 +63,11 @@ public abstract class Card {
     public void performSpecialMove(Card cardA, Player playerA){
         specialAbility.ability(cardA, playerA);
     }
+    
+    //apply direct damage to the player 
+    public void performSpecialDamage(Card card, Player player ){
+        specialAbility.ability(card, player);
+    }
 
     public int getCardTurn(){
         return cardTurn;
