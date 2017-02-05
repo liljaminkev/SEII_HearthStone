@@ -1,6 +1,7 @@
 package cards;
 
 import player.Player;
+import abilities.SpecialAbility;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

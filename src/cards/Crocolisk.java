@@ -1,6 +1,4 @@
-package cards;
-
-import <any?>;
+package cards;  
 
 /*
  * To change this license header, choose License Headers in Project Properties.

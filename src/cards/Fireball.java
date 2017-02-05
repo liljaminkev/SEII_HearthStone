@@ -1,6 +1,7 @@
-package abilities;
+package cards;
 
 
+import abilities.DamageAttack;
 import cards.Card;
 
 /*

@@ -13,7 +13,7 @@ package abilities_test;
 
 import player.PlayerHero;
 import cards.Romulo;
-import abilities.Fireball;
+import cards.Fireball;
 import cards.TimberWolf;
 import cards.DireWolfAlpha;
 import junit.framework.TestCase;
@@ -33,13 +33,13 @@ public class FireballTest extends TestCase{
 
     public void testCost()
     {
-        assertEquals(4, fireball.getManaCost());
+        assertEquals(4, fireball.getGemCost());
     }
     
     public void testDamageAttack()
     {
-        PlayerHero player= PlayerHero();
-        assertEquals(30, player.getHealthPoints());
+        PlayerHero hero = new PlayerHero();
+        assertEquals(30, hero.getHealthPoints());
         
         
         

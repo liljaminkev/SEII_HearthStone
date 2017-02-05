@@ -14,26 +14,26 @@ import cards.Card;
  *
  * @author James
  */
-public class BoostCrystals implements SpecialMove{
+public class BoostCrystals implements SpecialAbility{
 
     @Override
-    public void move() {
+    public void ability() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void move(Card a, int specialAmmount) {
+    public void ability(Card a, int specialAmmount) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void move(Card a, Card b, int specialAmmount) {
+    public void ability(Card a, Card b, int specialAmmount) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void move(Card a, Player p) {
-        p.incCrystals();
+    public void ability(Card a, Player playerA) {
+        playerA.incCrystals();
     }
     
     

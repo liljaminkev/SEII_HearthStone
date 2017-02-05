@@ -16,7 +16,7 @@ import cards.Deck;
  * @author James
  */
 
-class Player {
+public class Player {
     private static final int MAXCRYSTALS = 5;
     private int crystals;
     private int currentCrystalCount;

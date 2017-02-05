@@ -11,8 +11,13 @@ package player;
  * @author rodney
  */
 public class PlayerHero {
-    private int healthPoints = 30;
-    private int armorPoints = 0;
+    private int healthPoints;
+    private int armorPoints;
+    
+    public PlayerHero(){
+        healthPoints = 30;
+        armorPoints = 0;
+    }
 
     public PlayerHero(int healthPoints, int armorPoints){
         this.healthPoints = healthPoints;
