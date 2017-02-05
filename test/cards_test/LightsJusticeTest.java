@@ -34,7 +34,7 @@ public class LightsJusticeTest {
 
     public void testCost()
     {
-        assertEquals(1, lJustice.getManaCost());
+        assertEquals(1, lJustice.getGemCost());
     }
     
 }

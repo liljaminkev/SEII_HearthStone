@@ -18,7 +18,7 @@ public class RomuloTest extends TestCase
 
     public void testCost()
     {
-        assertEquals(4, romulo.getManaCost());
+        assertEquals(4, romulo.getGemCost());
     }
 
 }

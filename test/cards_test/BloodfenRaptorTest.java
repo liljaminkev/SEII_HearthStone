@@ -34,6 +34,6 @@ public class BloodfenRaptorTest {
 
     public void testCost()
     {
-        assertEquals(2, bRaptor.getManaCost());
+        assertEquals(2, bRaptor.getGemCost());
     }
 }

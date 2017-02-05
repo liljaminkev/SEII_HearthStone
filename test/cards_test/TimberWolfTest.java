@@ -18,7 +18,7 @@ public class TimberWolfTest extends TestCase
 
     public void testCost()
     {
-        assertEquals(1, timberWolf.getManaCost());
+        assertEquals(1, timberWolf.getGemCost());
     }
 
 }

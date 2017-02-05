@@ -20,7 +20,7 @@ public class DireWolfAlphaTest extends TestCase
 
     public void testCost()
     {
-        assertEquals(2, direWolf1.getManaCost());
+        assertEquals(2, direWolf1.getGemCost());
     }
 
     public void testAttackPowerBoostTwoCards()

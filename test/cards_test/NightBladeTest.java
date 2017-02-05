@@ -28,7 +28,7 @@ public class NightBladeTest extends TestCase
 
     public void testCost()
     {
-        assertEquals(5, nightblade.getManaCost());
+        assertEquals(5, nightblade.getGemCost());
     }
 
 }

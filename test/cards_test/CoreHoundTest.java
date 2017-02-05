@@ -8,6 +8,7 @@ package cards_test;
 
 import cards.CoreHound;
 import cards.Card;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
