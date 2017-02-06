@@ -21,11 +21,11 @@ public class BattleField extends Cards{
         return battleField;
     }
     // Helpers
-    */
+    
     public void checkBattleFieldCards(){
-        for(Card selectedCard : battleField)
+        for(Card selectedCard : this.cards)
             if(selectedCard.getDefensePoints() <= 0)
                 removeCard(selectedCard);    
-    }
+    }*/
 
 }

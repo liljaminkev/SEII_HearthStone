@@ -58,12 +58,12 @@ class Player {
     public void setField(BattleField field) {
         this.field = field;
     }
-
+    /*
     public Move pickMove(){
         Move selectedMove = new Move();
 
         return selectedMove;
-    }
+    }*/
     public void setCurrentCrystals(int num){
         currentCrystalCount = num;
     }
