@@ -23,16 +23,16 @@ public class DamageAttack implements SpecialAbility {
 
     }
     @Override
-    public void ability(Card cardA, int boostAmmount)
+    public void ability(Card cardA, int boostAmount)
     {
-        cardA.setAttackPoints(cardA.getAttackPoints() + boostAmmount);
+        cardA.setAttackPoints(cardA.getAttackPoints() + boostAmount);
     }
 
     @Override
-    public void ability(Card cardA, Card cardB, int boostAmmount)
+    public void ability(Card cardA, Card cardB, int boostAmount)
     {
-        cardA.setAttackPoints(cardA.getAttackPoints() + boostAmmount);
-        cardB.setAttackPoints(cardB.getAttackPoints() + boostAmmount);
+        cardA.setAttackPoints(cardA.getAttackPoints() + boostAmount);
+        cardB.setAttackPoints(cardB.getAttackPoints() + boostAmount);
     }
 
     @Override

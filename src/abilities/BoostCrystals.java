@@ -22,12 +22,12 @@ public class BoostCrystals implements SpecialAbility{
     }
 
     @Override
-    public void ability(Card a, int specialAmmount) {
+    public void ability(Card a, int specialAmount) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void ability(Card a, Card b, int specialAmmount) {
+    public void ability(Card a, Card b, int specialAmount) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
