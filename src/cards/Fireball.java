@@ -1,7 +1,7 @@
 package cards;
 
 
-import abilities.DamageAttack;
+import abilityassets.DamageAttack;
 import cards.Card;
 
 /*
@@ -24,4 +24,3 @@ public class Fireball extends Card {
         specialAbility = new DamageAttack();
     }
 }
-  

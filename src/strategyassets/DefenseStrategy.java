@@ -1,4 +1,7 @@
-package game;
+package strategyassets;
+
+
+import strategyassets.Strategy;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -6,19 +9,15 @@ package game;
  * and open the template in the editor.
  */
 
-
 /**
  *
  * @author rodney
  */
-public class SECardGame {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-        
+public class DefenseStrategy implements Strategy{
+    /*
+    @Override
+    public Move move(){
+        return null;
     }
-    
+    */
 }

@@ -1,3 +1,4 @@
+package playerassets;
 import java.util.ArrayList;
 import java.util.List;
 public abstract class Cards
@@ -16,7 +17,7 @@ public abstract class Cards
     {
       cards.add(index, newCard);
     }
-    
+
     public void addCard(Card newCard)
     {
       cards.add(newCard);

@@ -11,13 +11,9 @@ package cards;
  * @author James
  */
 public class LightsJustice extends Card{
-    private int attackPoints, defensePoints, manaCost;
-    
-    /**
-     *
-     */
+
     public LightsJustice() {
         super(1, 4, 1);
     }
-    
+
 }

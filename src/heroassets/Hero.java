@@ -1,4 +1,4 @@
-package player;
+package heroassets;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -10,16 +10,16 @@ package player;
  *
  * @author rodney
  */
-public class PlayerHero {
+public class Hero {
     private int healthPoints;
     private int armorPoints;
-    
-    public PlayerHero(){
+
+    public Hero(){
         healthPoints = 30;
         armorPoints = 0;
     }
 
-    public PlayerHero(int healthPoints, int armorPoints){
+    public Hero(int healthPoints, int armorPoints){
         this.healthPoints = healthPoints;
         this.armorPoints = armorPoints;
     }
@@ -49,6 +49,6 @@ public class PlayerHero {
     public void gainArmor(int gainAmount){
         armorPoints += gainAmount;
     }
-    
+
 
 }

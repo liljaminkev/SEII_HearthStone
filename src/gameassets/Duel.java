@@ -1,4 +1,4 @@
-package game;
+package gameassets;
 
 import player.Player;
 import java.util.List;
@@ -7,15 +7,15 @@ import java.util.List;
  * Defines main loop of a card duel game.
  * Extend this class for a particular game
  * @author David
- * 
+ *
  */
 public abstract class Duel {
     public final List<Player> players;
-    
+
     public Duel(List<Player> _players) {
         players = _players;
     }
-    
+
     /**
      * General method to play the game until there is a winner
      * @return winning player
@@ -43,7 +43,7 @@ public abstract class Duel {
      * Run this code at the start of a player's turn
      */
     protected void beforeTurn() {
-        
+
     }
 
     /**
@@ -51,5 +51,5 @@ public abstract class Duel {
      */
     protected void afterTurn() {
     }
-    
+
 }

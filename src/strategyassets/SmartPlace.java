@@ -1,4 +1,4 @@
-package game;
+package strategyassets;
 
 
 import player.Player;

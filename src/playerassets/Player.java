@@ -1,7 +1,7 @@
-package player;
+package playerassets;
 
 
-import game.Move;
+import strategyassets.Move;
 import cards.Deck;
 
 /*
@@ -96,7 +96,7 @@ public class Player {
             crystals = MAXCRYSTALS;
         }
     }
-    
+
     public int getCrystals(){
         return crystals;
     }

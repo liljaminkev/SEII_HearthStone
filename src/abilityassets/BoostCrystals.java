@@ -1,3 +1,9 @@
+package abilityassets;
+
+
+import player.Player;
+import cards.Card;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -24,12 +30,12 @@ public class BoostCrystals implements SpecialAbility{
     public void ability(Card a, Card b, int specialAmmount) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     @Override
-    public void ability(Player p){
-        p.incCrystals();
+    public void ability(Card a, Player playerA) {
+        playerA.incCrystals();
     }
-    
-    
-    
+
+
+
 }

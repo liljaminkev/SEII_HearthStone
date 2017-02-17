@@ -1,4 +1,4 @@
-package abilities;
+package abilityassets;
 
 
 import cards.Card;
@@ -10,13 +10,13 @@ public class BoostAttack implements SpecialAbility{
     {
 
     }
-    
+
     @Override
     public void ability(Card cardA, int boostAmmount)
     {
         cardA.setAttackPoints(cardA.getAttackPoints() + boostAmmount);
     }
-    
+
     @Override
     public void ability(Card cardA, Card cardB, int boostAmmount)
     {

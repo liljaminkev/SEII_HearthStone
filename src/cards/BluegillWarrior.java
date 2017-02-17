@@ -15,11 +15,6 @@ package cards;
 //public class BluegillWarrior extends Card implements SpecialMove{
 
 public class BluegillWarrior extends Card{
-    private int attackPoints, defensePoints, manaCost;
-
-    /**
-     *
-     */
     public BluegillWarrior() {
         super(2, 1, 2);
     }

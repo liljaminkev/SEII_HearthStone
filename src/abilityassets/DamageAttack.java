@@ -8,7 +8,7 @@
  *
  * @author bashi.aquino
  */
-package abilities;
+package abilityassets;
 
 //ability is used to damage the hero
 
@@ -16,7 +16,7 @@ import player.Player;
 import cards.Card;
 
 public class DamageAttack implements SpecialAbility {
-    
+
     @Override
     public void ability()
     {
@@ -40,7 +40,7 @@ public class DamageAttack implements SpecialAbility {
      {
          playerA.getHero().damageHealth(a.getAttackPoints());
      }
-     
-  
+
+
 
 }
