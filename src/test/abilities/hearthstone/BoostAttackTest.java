@@ -1,8 +1,6 @@
-package abilities_test;
+package abilities.hearthstone;
 
-import cards.Romulo;
-import cards.TimberWolf;
-import cards.DireWolfAlpha;
+import cards.hearthstone.*;
 import junit.framework.TestCase;
 public class BoostAttackTest extends TestCase
 {

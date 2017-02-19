@@ -1,9 +1,7 @@
-package abilities.hearthstone;
-
-
+package card.abilities.hearthstone;
 import player.Player;
 import cards.Card;
-
+import abilities.SpecialAbility;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

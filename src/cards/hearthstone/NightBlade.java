@@ -14,6 +14,6 @@ public class NightBlade extends Card
 {
     public NightBlade()
     {
-        super(4, 4, 5);
+        super("Night Blade", 4, 4, 5);
     }
 }

@@ -1,4 +1,4 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -10,7 +10,7 @@ package cards.hearthstone;
  *
  * @author bashi.aquino
  */
-import cards.NightBlade;
+import cards.hearthstone.NightBlade;
 import junit.framework.TestCase;
 public class NightBladeTest extends TestCase
 {
@@ -28,7 +28,7 @@ public class NightBladeTest extends TestCase
 
     public void testCost()
     {
-        assertEquals(5, nightblade.getGemCost());
+        assertEquals(5, nightblade.getCardCost());
     }
 
 }

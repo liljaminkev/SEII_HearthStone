@@ -1,4 +1,4 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -6,7 +6,7 @@ package cards.hearthstone;
  * and open the template in the editor.
  */
 
-import cards.MagmaRager;
+import cards.hearthstone.MagmaRager;
 import cards.Card;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -40,6 +40,6 @@ public class MagmaRagerTest {
 
     @Test
     public void testGemCost(){
-        assertEquals(3, magmaRager.getGemCost());
+        assertEquals(3, magmaRager.getCardCost());
     }
 }

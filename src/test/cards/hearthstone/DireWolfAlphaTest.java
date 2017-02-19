@@ -1,8 +1,6 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
-import cards.Romulo;
-import cards.TimberWolf;
-import cards.DireWolfAlpha;
+import cards.hearthstone.*;
 import junit.framework.TestCase;
 public class DireWolfAlphaTest extends TestCase
 {
@@ -20,7 +18,7 @@ public class DireWolfAlphaTest extends TestCase
 
     public void testCost()
     {
-        assertEquals(2, direWolf1.getGemCost());
+        assertEquals(2, direWolf1.getCardCost());
     }
 
     public void testAttackPowerBoostTwoCards()

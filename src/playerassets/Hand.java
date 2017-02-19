@@ -1,7 +1,11 @@
 package playerassets;
-
-//hand contains an arrayList of cards, a counter
-import java.util.ArrayList;
-import java.util.List;
+import cards.Card;
 public class Hand extends Cards{
+    public Card playCard(Card cardToBePlayed)
+    {
+        Card returnCard;
+        returnCard = cardToBePlayed;
+        this.removeCard(cardToBePlayed);
+        return returnCard;
+    }
 }

@@ -1,4 +1,4 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -6,7 +6,7 @@ package cards.hearthstone;
  * and open the template in the editor.
  */
 
-import cards.CoreHound;
+import cards.hearthstone.CoreHound;
 import cards.Card;
 
 import org.junit.After;
@@ -41,6 +41,6 @@ public class CoreHoundTest {
 
     @Test
     public void testGemCost(){
-        assertEquals(7, coreHound.getGemCost());
+        assertEquals(7, coreHound.getCardCost());
     }
 }

@@ -1,4 +1,4 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -34,6 +34,6 @@ public class BloodfenRaptorTest {
 
     public void testCost()
     {
-        assertEquals(2, bRaptor.getGemCost());
+        assertEquals(2, bRaptor.getCardCost());
     }
 }

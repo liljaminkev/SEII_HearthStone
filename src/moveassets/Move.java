@@ -1,39 +1,65 @@
 package moveassets;
-import card.Card;
 import playerassets.*;
-public class Move {
+import cards.Card;
+import hero.Hero;
 
-   public void placeCard(Hand playerHand, int handIndex, BattleField battleField, int fieldIndex)
-   {
-       Card tempCard;
-       tempCard = playerHand.showCard(handIndex);
-       playerHand.removeCard(tempCard);
-       battleField.addCard(fieldIndex, tempCard);
-   }
+public abstract class Move {
+  Card card;
+  Hand hand;
+  int indexOnField1;
+  int indexOnField2;
+  BattleField battleField1;
+  BattleField battleField2;
+  Hero heroBeingAttacked;
 
-/*
-   //attack card takes two players and
-   public void attackCard(int battleFieldIndexA, int battleFieldIndexB)
-   {
-     this.battleFieldIndexA = battleFieldIndexA;
-     this.battleFieldIndexB = battleFieldIndexB;
-   }
+  //place Card
+  public Move(){}
 
-   public int getIndexA()
-   {
-     return cardIndexOfHandA;
-   }
-   public int getIndexB()
-   {
-     return cardHandOfIndexB;
-   }
-   public int getBattleFieldIndexA()
-   {
-     return battleFieldIndexA;
-   }
-   public int getBattleFieldIndexB()
-   {
-     return battleFieldIndexB;
-   }
-*/
+  public Card getCardToBeUsed()
+  {
+    return card;
+  }
+
+  public Hand getHand()
+  {
+    return hand;
+  }
+
+  public int getIndexOfField1()
+  {
+    return indexOnField1;
+  }
+
+  public int getIndexOfField2()
+  {
+    return indexOnField2;
+  }
+
+  public BattleField getBattleField1()
+  {
+    return battleField1;
+  }
+  public BattleField getBattleField2()
+  {
+    return battleField2;
+  }
+
+  public Hero getHeroBeingAttacked()
+  {
+    return heroBeingAttacked;
+  }
+
+  public void execute(){};
+
+
+  /*
+  public void placeCard(Hand playerHand, int handIndex, BattleField battlefield, int battlefieldIndex)
+  {
+      Card tempCard;
+      tempCard = playerHand.showCard(handIndex);
+      playerHand.removeCard(tempCard);
+      battleField.addCard(battlefieldIndex, tempCard);
+      battleFieldB.showCard(battleFieldIndexB);
+  }*/
+
 }
