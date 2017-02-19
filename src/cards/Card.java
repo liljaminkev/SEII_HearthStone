@@ -1,6 +1,6 @@
 package cards;
 
-import player.Player;
+import playerassets.Player;
 import abilities.SpecialAbility;
 
 /*

@@ -2,7 +2,6 @@ package playerassets;
 
 //battle field represents the player's cards in play
 
-import cards.Cards;
 import cards.Card;
 import java.util.ArrayList;
 import java.util.List;

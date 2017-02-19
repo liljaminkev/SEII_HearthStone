@@ -1,6 +1,7 @@
 package playerassets;
 import java.util.ArrayList;
 import java.util.List;
+import cards.Card;
 public abstract class Cards
 {
     private List<Card> cards;
