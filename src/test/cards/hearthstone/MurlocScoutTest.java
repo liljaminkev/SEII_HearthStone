@@ -1,6 +1,6 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
-import cards.MurlocScout;
+import cards.hearthstone.MurlocScout;
 import cards.Card;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,6 +31,6 @@ public class MurlocScoutTest {
 
     @Test
     public void testGemCost(){
-        assertEquals(0, murlocScout.getGemCost());
+        assertEquals(0, murlocScout.getCardCost());
     }
 }

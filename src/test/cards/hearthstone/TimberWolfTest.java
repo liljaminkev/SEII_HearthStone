@@ -1,6 +1,6 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
-import cards.TimberWolf;
+import cards.hearthstone.TimberWolf;
 import junit.framework.TestCase;
 public class TimberWolfTest extends TestCase
 {
@@ -18,7 +18,7 @@ public class TimberWolfTest extends TestCase
 
     public void testCost()
     {
-        assertEquals(1, timberWolf.getGemCost());
+        assertEquals(1, timberWolf.getCardCost());
     }
 
 }

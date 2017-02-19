@@ -1,4 +1,4 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -6,7 +6,7 @@ package cards.hearthstone;
  * and open the template in the editor.
  */
 
-import cards.LightsJustice;
+import cards.hearthstone.LightsJustice;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -34,7 +34,7 @@ public class LightsJusticeTest {
 
     public void testCost()
     {
-        assertEquals(1, lJustice.getGemCost());
+        assertEquals(1, lJustice.getCardCost());
     }
 
 }

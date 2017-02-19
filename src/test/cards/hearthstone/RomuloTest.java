@@ -1,6 +1,6 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
-import cards.Romulo;
+import cards.hearthstone.Romulo;
 import junit.framework.TestCase;
 public class RomuloTest extends TestCase
 {
@@ -18,7 +18,7 @@ public class RomuloTest extends TestCase
 
     public void testCost()
     {
-        assertEquals(4, romulo.getGemCost());
+        assertEquals(4, romulo.getCardCost());
     }
 
 }

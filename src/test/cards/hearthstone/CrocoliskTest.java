@@ -1,6 +1,6 @@
-package cards.hearthstone;
+package test.cards.hearthstone;
 
-import cards.Crocolisk;
+import cards.hearthstone.Crocolisk;
 import cards.Card;
 /*
  * To change this license header, choose License Headers in Project Properties.

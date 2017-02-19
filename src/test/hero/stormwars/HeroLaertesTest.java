@@ -1,4 +1,4 @@
-package tests.hero.stormwars;
+package test.hero.stormwars;
 import hero.stormwars.HeroLaertes;
 import junit.framework.TestCase;
 public class HeroLaertesTest extends TestCase
