@@ -41,6 +41,6 @@ public class CoreHoundTest {
 
     @Test
     public void testGemCost(){
-        assertEquals(7, coreHound.getGemCost());
+        assertEquals(7, coreHound.getCardCost());
     }
 }

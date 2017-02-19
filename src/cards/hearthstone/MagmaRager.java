@@ -1,18 +1,8 @@
 package cards.hearthstone;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author rodney
- */
+import cards.Card;
 public class MagmaRager extends Card{
     public MagmaRager(){
-        super(5, 1, 3);
+        super("Magma Rager", 5, 1, 3);
     }
 
 }

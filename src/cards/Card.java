@@ -1,41 +1,31 @@
 package cards;
 
 import playerassets.Player;
-import abilities.SpecialAbility;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author rodney
- */
 public abstract class Card {
-
+    private String cardName;
     private int attackPoints;   // how much dmg the card does
     private int defensePoints;  // how much health/def points the card has = 0 dead
-    private int gemCost;       // gem cost to play card
-    private int specialAmmount; //special powers like poison, heal, boost atk
-    private int cardTurn;   //card turn set to 1 at end of every turn
+    private int cardCost;       // cost to play card
+    private int specialAbilityAmmount; // special powers like poison, heal, boost atk
+    private int cardTurn;       // if 1 allows card to attack
     SpecialAbility specialAbility;
 
 
-    public Card(int attackPoints, int defensePoints, int gemCost){
+    public Card(String cardName, int attackPoints, int defensePoints, int cardCost){
+        this.cardName = cardName;
         this.attackPoints = attackPoints;
         this.defensePoints = defensePoints;
-        this.gemCost = gemCost;
+        this.cardCost = cardCost;
         this.cardTurn = 0;
     }
 
     //constructor for cards with special ammounts like poison, boost attack, heal etc
-    public Card(int attackPoints, int defensePoints, int gemCost, int specialAmmount){
+    public Card(int attackPoints, int defensePoints, int cardCost, int specialAbilityAmmount){
         this.attackPoints = attackPoints;
         this.defensePoints = defensePoints;
-        this.gemCost = gemCost;
-        this.specialAmmount = specialAmmount;
+        this.cardCost = cardCost;
+        this.specialAbilityAmmount = specialAbilityAmmount;
         this.cardTurn = 0;
     }
 
@@ -48,8 +38,8 @@ public abstract class Card {
         return defensePoints;
     }
 
-    public int getGemCost(){
-        return gemCost;
+    public int getCardCost(){
+        return cardCost;
     }
 
     public void performSpecialAbility(){
@@ -57,15 +47,15 @@ public abstract class Card {
     }
 
     public void performSpecialAbility(Card cardA){
-        specialAbility.ability(cardA, specialAmmount);
+        specialAbility.ability(cardA, specialAbilityAmmount);
     }
 
     public void performSpecialAbility(Card cardA, Card cardB){
-        specialAbility.ability(cardA, cardB, specialAmmount);
+        specialAbility.ability(cardA, cardB, specialAbilityAmmount);
     }
 
     //this method allows a card to increment the players crystal count
-    public void performSpecialMove(Card cardA, Player playerA){
+    public void performSpecialAbility(Card cardA, Player playerA){
         specialAbility.ability(cardA, playerA);
     }
 
@@ -78,15 +68,22 @@ public abstract class Card {
         return cardTurn;
     }
 
+    public String getCardName(){
+        return cardName;
+    }
+
     //setters
+    public void setSpecialAbilityAmmount(int specialAbilityAmmount){
+        this.specialAbilityAmmount = specialAbilityAmmount;
+    }
     public void setAttackPoints(int attackPoints){
         this.attackPoints =  attackPoints;
     }
     public void setDefensePoints(int defensePoints){
         this.defensePoints = defensePoints;
     }
-    public void setGemCost(int gemCost){
-        this.gemCost = gemCost;
+    public void setCardCost(int cardCost){
+        this.cardCost = cardCost;
     }
     public void setSpecialAbility(SpecialAbility ability){
         specialAbility = ability;

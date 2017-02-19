@@ -1,7 +1,7 @@
-package abilities.hearthstone;
+package cards.hearthstone.abilities;
 import cards.Card;
 import playerassets.Player;
-import cards.abilities.SpecialAbility;
+import cards.SpecialAbility;
 
 
 // ability is used to book attack power of cards next to it

@@ -33,6 +33,6 @@ public class BluegillWarriorTest {
 
     public void testCost()
     {
-        assertEquals(2, bgWarrior.getGemCost());
+        assertEquals(2, bgWarrior.getCardCost());
     }
 }

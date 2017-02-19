@@ -34,7 +34,7 @@ public class CrocoliskTest
     @Test
     public void testCost()
     {
-        assertEquals(2, crocolisk.getGemCost());
+        assertEquals(2, crocolisk.getCardCost());
     }
 
 }
