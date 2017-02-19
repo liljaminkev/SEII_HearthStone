@@ -12,7 +12,6 @@ public abstract class Cards
 
     }
 
-
     //add new card to hand
     public void addCard(int index, Card newCard)
     {

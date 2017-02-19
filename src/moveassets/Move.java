@@ -1,38 +1,19 @@
 package moveassets;
 import playerassets.*;
 import cards.Card;
+import hero.Hero;
 
 public abstract class Move {
-  private Card card;
-  private Hand hand;
-  private int indexOnField1;
-  private int indexOnField2;
-  private BattleField battleField1;
-  private BattleField battleField2;
-  private Player playerBeingAttacked;
+  Card card;
+  Hand hand;
+  int indexOnField1;
+  int indexOnField2;
+  BattleField battleField1;
+  BattleField battleField2;
+  Hero heroBeingAttacked;
 
-
-  public Move(Hand hand, Card card, int index, BattleField battleField)
-  {
-    this.hand = hand;
-    this.card = card;
-    this.indexOnField1 = index;
-    this.battleField1 = battleField;
-  }
-  public Move(int battleFieldIndexA, int battleFieldIndexB, BattleField battleFieldA, BattleField battleFieldB)
-  {
-    this.indexOnField1 = battleFieldIndexA;
-    this.indexOnField2 = battleFieldIndexB;
-    this.battleField1 = battleFieldA;
-    this.battleField2 = battleFieldB;
-  }
-
-  public Move(Card card, Player player)
-  {
-    this.card = card;
-    this.playerBeingAttacked = player;
-  }
-
+  //place Card
+  public Move(){}
 
   public Card getCardToBeUsed()
   {
@@ -63,10 +44,14 @@ public abstract class Move {
     return battleField2;
   }
 
-  public Player getPlayer()
+  public Hero getHeroBeingAttacked()
   {
-    return playerBeingAttacked;
+    return heroBeingAttacked;
   }
+
+  public void execute(){};
+
+
   /*
   public void placeCard(Hand playerHand, int handIndex, BattleField battlefield, int battlefieldIndex)
   {

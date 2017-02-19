@@ -14,8 +14,8 @@ public class MoveAttackCardTest extends TestCase{
     MoveAttackCard movecard = new MoveAttackCard(0, 0, field1, field2);
     assertEquals(0, movecard.getIndexOfField1());
     assertEquals(0, movecard.getIndexOfField2());
-    assertEquals(romulo.getAttackPoints(), movecard.getBattleField1().showCard(0).getAttackPoints());
-    assertEquals(bloodfenRaptor.getAttackPoints(), movecard.getBattleField2().showCard(0).getAttackPoints());
+    assertEquals("Romulo", movecard.getBattleField1().showCard(0).getCardName());
+    assertEquals("Bloodfen Raptor", movecard.getBattleField2().showCard(0).getCardName());
   }
 
   public void setUp()

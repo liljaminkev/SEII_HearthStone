@@ -1,7 +1,7 @@
-package cards.hearthstone;
+package test.playerassets;
 
-import cards.Deck;
-import cards.DireWolfAlpha;
+import playerassets.Deck;
+import cards.hearthstone.DireWolfAlpha;
 import junit.framework.TestCase;
 public class DeckTest extends TestCase
 {

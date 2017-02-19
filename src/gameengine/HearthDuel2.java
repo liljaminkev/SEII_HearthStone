@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cardduel;
+package gameengine;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class HearthDuel extends Duel{
         super(_players);
     }
 
-    
+
     @Override
     protected Player findWinner() {
     if(players[0].getHero().getHealthPoints() == 0){
@@ -28,5 +28,5 @@ public class HearthDuel extends Duel{
     }
     else return ;
     }
-    
+
 }
