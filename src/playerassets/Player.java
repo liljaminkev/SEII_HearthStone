@@ -1,8 +1,7 @@
 package playerassets;
+import hero.Hero;
 
-
-import strategyassets.Move;
-import cards.Deck;
+//import strategyassets.Move;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -20,12 +19,12 @@ public class Player {
     private static final int MAXCRYSTALS = 5;
     private int crystals;
     private int currentCrystalCount;
-    private PlayerHero hero;
+    private Hero hero;
     private Deck deck;
     private Hand hand;
     private BattleField field;
 
-    public Player(PlayerHero hero, Deck deck, Hand hand) {
+    public Player(Hero hero, Deck deck, Hand hand) {
         this.hero = hero;
         this.deck = deck;
         this.hand = hand;
@@ -33,7 +32,7 @@ public class Player {
         crystals = 0; //player starts with crystal meter empty
     }
 
-    public PlayerHero getHero() {
+    public Hero getHero() {
         return hero;
     }
 
@@ -45,7 +44,7 @@ public class Player {
         return hand;
     }
 
-    public void setHero(PlayerHero hero) {
+    public void setHero(Hero hero) {
         this.hero = hero;
     }
 
@@ -64,12 +63,12 @@ public class Player {
     public void setField(BattleField field) {
         this.field = field;
     }
-
+    /*
     public Move pickMove(){
         Move selectedMove = new Move();
 
         return selectedMove;
-    }
+    }*/
     public void setCurrentCrystals(int num){
         currentCrystalCount = num;
     }

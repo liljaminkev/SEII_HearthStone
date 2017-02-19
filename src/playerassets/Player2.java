@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cardduel;
+package playerassets;
 
 /**
  *
@@ -43,12 +43,12 @@ class Player {
     public void setHand(Card[] hand) {
         this.hand = hand;
     }
-    
+
     public Move pickMove(){
         Move selectedMove = new Move();
-        
+
         return selectedMove;
     }
-    
-    
+
+
 }
