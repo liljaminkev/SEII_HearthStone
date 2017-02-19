@@ -1,16 +1,16 @@
 package hero;
-public class Hero {
-    private int healthPoints;
-    private int armorPoints;
+public abstract class Hero {
+    private int healthPoints = 0;
+    private int armorPoints = 0;
+    private int attackPower = 0;
 
-    public Hero(){
-        healthPoints = 30;
-        armorPoints = 0;
+    public Hero(int healthPoints){
+        this.healthPoints = healthPoints;
     }
 
-    public Hero(int healthPoints, int armorPoints){
-        this.healthPoints = healthPoints;
-        this.armorPoints = armorPoints;
+    //setters
+    public void setAttackPower(int atkpower){
+        this.attackPower = atkpower;
     }
 
     // Getters
@@ -18,26 +18,15 @@ public class Hero {
         return healthPoints;
     }
 
-    // Mutators
-    public void damageHealth(int damageAmount){
-        healthPoints -= damageAmount;
+    public void setHealthPoints(int ammount){
+        healthPoints = ammount;
     }
 
-    public void healHealth(int healAmount){
-        healthPoints += healAmount;
-    }
 
-    public void damageArmor(int damageAmount){
-        if((armorPoints - damageAmount) <= 0){
-            armorPoints = 0;
-        }
-        else{
-            armorPoints -= damageAmount;
-        }
-    }
-    public void gainArmor(int gainAmount){
-        armorPoints += gainAmount;
-    }
+//hooks for heros to implement
+    public void damageArmor(int damageAmount){}
+    public void gainArmor(int gainAmount){}
+    public void attack(){}
 
 
 }
