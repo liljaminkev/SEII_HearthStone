@@ -7,3 +7,5 @@ nbproject/
 *.properties
 build/
 *.mf
+
+src/BattleField.java
