@@ -1,6 +1,8 @@
 package hero.stormwars;
+import hero.Hero;
 public class HeroLaertes extends Hero{
     public HeroLaertes(){
-        this.setHealthPoints(26);
+        super(26);
+        this.setAttackPower(2);
     }
 }
