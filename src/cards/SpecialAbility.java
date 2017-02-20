@@ -1,6 +1,4 @@
 package cards;
-
-
 import playerassets.Player;
 import cards.Card;
 
@@ -11,4 +9,6 @@ public interface SpecialAbility
     public void ability(Card a, Card b, int specialAmmount);
     public void ability (Card a, Player playerA);
     //for player hero to add crystalspublic void ability();
+    public String getAbilityName();
+    public void setAbilityName(String name);
 }
