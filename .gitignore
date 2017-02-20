@@ -2,16 +2,14 @@
 *.class
 *.properties
 *.xml
-nbproject
+nbproject/
 .DS_Store
-
-
-
-
 *.properties
+build/
+*.mf
 
-*.properties
+src/BattleField.java
 
-nbproject/project.properties
+src/BattleField.java
 
-nbproject/private/private.properties
+src/BattleField.java
