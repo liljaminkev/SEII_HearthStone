@@ -8,7 +8,7 @@ import junit.framework.TestCase;
 public class MovePlaceCard extends Move{
   public MovePlaceCard(Hand hand, Card card, int index, BattleField battleField)
   {
-    this.hand = hand;
+    this.hand=hand;
     this.card = card;
     this.indexOnField1 = index;
     this.battleField1 = battleField;
