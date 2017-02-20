@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package cards.stormwars;
-
 import cards.Card;
 
 /**
@@ -13,9 +12,9 @@ import cards.Card;
  * Saurian Scout is a 4 cost card with heavy defense
  */
 public class CardSaurianScout extends Card{
-    
+
     public CardSaurianScout() {
         super("Saurian Scout", 1, 6, 4);
     }
-    
+
 }

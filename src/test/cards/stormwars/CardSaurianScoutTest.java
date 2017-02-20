@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cards.stormwars;
+package test.cards.stormwars;
+import cards.stormwars.CardSaurianScout;
 import static org.junit.Assert.*;
 import org.junit.Before;
 
@@ -20,12 +21,12 @@ public class CardSaurianScoutTest {
         assertEquals(6, scout.getDefensePoints());
         //Test the cost
         assertEquals(4, scout.getCardCost());
-        
+
     }
-    
+
     @Before
     public void setUp() {
         scout = new CardSaurianScout();
     }
-    
+
 }
