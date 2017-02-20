@@ -1,3 +1,7 @@
+package moveassets;
+import moveassets.Move;
+import hero.Hero;
+import cards.Card;
 public class MoveAttackHero extends Move{
 
   public MoveAttackHero(Card card, Hero hero)
@@ -6,8 +10,8 @@ public class MoveAttackHero extends Move{
     this.heroBeingAttacked = hero;
   }
 
-  public execute()
+  public void execute()
   {
-      hero.setHealthPoints(hero.getHealthPoints() - card.getAttackPoints()); 
+      heroBeingAttacked.setHealthPoints(heroBeingAttacked.getHealthPoints() - card.getAttackPoints());
   }
 }

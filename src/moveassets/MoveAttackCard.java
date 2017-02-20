@@ -10,4 +10,10 @@ public class MoveAttackCard extends Move{
       battleField2 = fieldB;
   }
 
+  //attack from field 1 to field 2
+  public void execute()
+  {
+      battleField2.showcard(indexOnField2).setdefence  battleField1.showcard
+  }
+
 }

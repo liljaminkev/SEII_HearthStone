@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+package test.moveassets;
 import cards.Card;
 import cards.hearthstone.BloodfenRaptor;
 import cards.hearthstone.Romulo;
 import hero.Hero;
 import hero.hearthstone.Jaina;
 import junit.framework.TestCase;
-import moveassets.MoveAttackHero;
+import moveassets.*;
 import playerassets.BattleField;
 
 /**
@@ -18,13 +18,13 @@ import playerassets.BattleField;
  * @author James
  */
 public class MoveAttackHeroTest extends TestCase{
-    
+
   Hero hero;
   Card card;
 
   public void testAttackHero(){
-    
-    MoveAttackHero attackHero = new MoveAttackHero(card, hero);
+
+    Move attackHero = new MoveAttackHero(card, hero);
     //Hero should start with 20 health points
     assertEquals(20 , hero.getHealthPoints());
     assertEquals(3, card.getAttackPoints());
@@ -40,6 +40,6 @@ public class MoveAttackHeroTest extends TestCase{
       card = new BloodfenRaptor();
       hero = new Jaina();
   }
-  
-  
+
+
 }

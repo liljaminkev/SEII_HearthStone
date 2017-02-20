@@ -1,4 +1,4 @@
-package game_test;
+package test.moveassets;
 
 
 
@@ -11,7 +11,7 @@ import cards.Romulo;
 import cards.DireWolfAlpha;
 import junit.framework.TestCase;
 public class MoveAttackTest extends TestCase
-{ 
+{
 
     Player playerB;
     BattleField battleFieldplayerA;
@@ -20,9 +20,9 @@ public class MoveAttackTest extends TestCase
     Hand handplayerB;
     DireWolfAlpha dire= new DireWolfAlpha();
     Romulo romulo= new Romulo();
-    
+
     Move move;
-    
+
     //test AttackMinion
     public void testAttackMinion()
     {
@@ -33,7 +33,7 @@ public class MoveAttackTest extends TestCase
             move.attackMinion(0, 0, battleFieldplayerA, battleFieldplayerB);
             assertEquals(0,romulo.getDefensePoints());
     }
-    
+
     //test AttackHero
     public void testAttactHero()
     {
@@ -43,7 +43,7 @@ public class MoveAttackTest extends TestCase
         move.attackHero(0,battleFieldplayerA, playerB);
         assertTrue(playerB.getHero().getHealthPoints()<30);
     }
-        
+
     @Override
     public void setUp()
     {
