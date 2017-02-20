@@ -1,4 +1,4 @@
-package test.strategyassets;
+package test.moveassets;
 
 import strategyassets.*;
 import playerassets.*;
