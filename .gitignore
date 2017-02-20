@@ -2,13 +2,6 @@
 *.class
 *.properties
 *.xml
-nbproject/
 .DS_Store
 *.properties
-build/
 *.mf
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
