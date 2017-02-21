@@ -1,5 +1,8 @@
 package test.moveassets;
 import moveassets.MoveAttackCard;
+import cards.*;
+import cards.hearthstone.*;
+import playerassets.*;
 import junit.framework.TestCase;
 public class MoveAttackCardTest extends TestCase{
   BattleField field1;

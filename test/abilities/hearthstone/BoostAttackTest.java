@@ -1,5 +1,6 @@
-package test.abilities.hearthstone;
+package abilities.hearthstone;
 
+import cards.hearthstone.*;
 import junit.framework.TestCase;
 public class BoostAttackTest extends TestCase
 {

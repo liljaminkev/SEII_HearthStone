@@ -1,4 +1,5 @@
 package moveassets;
+import moveassets.Move;
 import hero.Hero;
 import cards.Card;
 public class MoveAttackHero extends Move{

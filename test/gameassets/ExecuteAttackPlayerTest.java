@@ -1,5 +1,3 @@
-package test.gameassets;
-
 import junit.framework.TestCase;
 public class ExecuteAttackPlayerTest extends TestCase{
   

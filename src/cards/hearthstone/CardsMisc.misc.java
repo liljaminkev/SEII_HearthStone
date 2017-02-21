@@ -1,5 +1,3 @@
-package cards.hearthstone;
-
 //package cards;
 /*
 

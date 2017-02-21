@@ -1,4 +1,4 @@
-package test.strategyassets;
+package test.moveassets;
 
 import game.Move;
 import player.Hand;
