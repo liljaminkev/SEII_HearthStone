@@ -1,7 +1,7 @@
-package card.abilities.hearthstone;
-import player.Player;
+package cards.hearthstone.abilities;
+import playerassets.Player;
 import cards.Card;
-import abilities.SpecialAbility;
+import cards.SpecialAbility;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -32,6 +32,16 @@ public class BoostCrystals implements SpecialAbility{
     @Override
     public void ability(Card a, Player playerA) {
         playerA.incCrystals();
+    }
+
+    @Override
+    public String getAbilityName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setAbilityName(String name) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 

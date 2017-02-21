@@ -1,6 +1,6 @@
 package strategyassets;
 
-import player.Player;
+import playerassets.Player;
 
 //smart move to return offensive moves
 public class SmartMove implements Strategy

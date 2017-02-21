@@ -1,7 +1,8 @@
 package moveassets;
-import playerassets.*;
 import cards.Card;
 import hero.Hero;
+import playerassets.BattleField;
+import playerassets.Hand;
 
 public abstract class Move {
   Card card;

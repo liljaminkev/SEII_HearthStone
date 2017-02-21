@@ -1,4 +1,10 @@
+package strategyassets.Misc;
+
+import cards.hearthstone.BloodfenRaptor;
+import cards.hearthstone.Romulo;
 import junit.framework.TestCase;
+import moveassets.MoveAttackCard;
+import playerassets.BattleField;
 public class ExecuteAttackCardMoveTest extends TestCase{
   BattleField field1;
   BattleField field2;

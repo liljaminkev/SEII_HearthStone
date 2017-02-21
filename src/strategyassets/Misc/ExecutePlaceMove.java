@@ -1,3 +1,8 @@
+package strategyassets.Misc;
+
+import moveassets.Move;
+import strategyassets.Command;
+
 public class ExecutePlaceMove implements Command {
   Move placeMove;
   

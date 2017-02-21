@@ -1,6 +1,7 @@
 package playerassets;
 import cards.Card;
-public class Hand extends Cards{
+import java.io.Serializable;
+public class Hand extends Cards implements Serializable{
     public Card playCard(Card cardToBePlayed)
     {
         Card returnCard;

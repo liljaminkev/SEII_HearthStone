@@ -2,7 +2,8 @@
 package playerassets;
 import java.util.*;
 import cards.Card;
-public class Deck extends Cards{
+import java.io.Serializable;
+public class Deck extends Cards implements Serializable{
     public Card drawCard()
     {
         Card returnCard;

@@ -1,10 +1,11 @@
 package playerassets;
 import hero.Hero;
-public abstract class Player {
+import java.io.Serializable;
+public abstract class Player implements Serializable{
     private Hero hero;
     private Deck deck;
     private Hand hand;
-    private BattleField field;
+    transient private BattleField field;
 
     public Player(Hero hero, Deck deck, Hand hand) {
         this.hero = hero;

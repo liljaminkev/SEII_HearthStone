@@ -1,10 +1,11 @@
 package strategyassets;
 
 
-import player.Player;
-import player.Hand;
-import cards.Deck;
+import playerassets.Player;
+import playerassets.Hand;
+import playerassets.Deck;
 import cards.Card;
+import moveassets.Move;
 
 //smart move to return offensive moves
 public class SmartPlace implements Strategy

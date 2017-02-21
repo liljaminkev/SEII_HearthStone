@@ -1,15 +1,16 @@
 package cards;
 
+import java.io.Serializable;
 import playerassets.Player;
 
-public abstract class Card {
+public abstract class Card implements Serializable{
     private String cardName;
-    private int attackPoints;   // how much dmg the card does
-    private int defensePoints;  // how much health/def points the card has = 0 dead
-    private int cardCost;       // cost to play card
-    private int specialAbilityAmmount; // special powers like poison, heal, boost atk
-    private int cardTurn;       // if 1 allows card to attack
-    SpecialAbility specialAbility;
+    transient private int attackPoints;   // how much dmg the card does
+    transient private int defensePoints;  // how much health/def points the card has = 0 dead
+    transient private int cardCost;       // cost to play card
+    transient private int specialAbilityAmmount; // special powers like poison, heal, boost atk
+    transient private int cardTurn;       // if 1 allows card to attack
+    transient SpecialAbility specialAbility;
 
 
     public Card(String cardName, int attackPoints, int defensePoints, int cardCost){
