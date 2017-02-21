@@ -3,6 +3,7 @@ package moveassets;
 import playerassets.*;
 import playerassets.Cards;
 import cards.Card;
+
 public class MoveAttackCard extends Move{
 
   public MoveAttackCard(int fieldIndexA, int fieldIndexB, BattleField fieldA, BattleField fieldB)

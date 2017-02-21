@@ -1,15 +1,6 @@
 
-*.class
-*.properties
-*.xml
-nbproject/
-.DS_Store
-*.properties
-build/
-*.mf
+src/strategyassets/ExecutePlaceMove.java
 
-src/BattleField.java
+src/strategyassets/ExecuteAttackPlayer.java
 
-src/BattleField.java
-
-src/BattleField.java
+src/strategyassets/ExecuteAttackCardMoveTest.java

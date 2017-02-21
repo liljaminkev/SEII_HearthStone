@@ -1,11 +1,7 @@
 package test.moveassets;
 
-import strategyassets.*;
-import playerassets.*;
-import moveassets.*;
 import hero.Hero;
 import hero.hearthstone.Jaina;
-import cards.hearthstone.*;
 import junit.framework.TestCase;
 
 public class MovePlaceCardTest extends TestCase{

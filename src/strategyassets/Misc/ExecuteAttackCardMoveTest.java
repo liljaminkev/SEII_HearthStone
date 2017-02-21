@@ -1,24 +1,19 @@
-package test.moveassets;
-import moveassets.MoveAttackCard;
+package strategyassets.Misc;
+
 import junit.framework.TestCase;
-public class MoveAttackCardTest extends TestCase{
+public class ExecuteAttackCardMoveTest extends TestCase{
   BattleField field1;
   BattleField field2;
   BloodfenRaptor bloodfenRaptor;
   Romulo romulo;
-
+  
   public void testAttack(){
     MoveAttackCard movecard = new MoveAttackCard(0, 0, field1, field2);
-    assertEquals(0, movecard.getIndexOfField1());
-    assertEquals(0, movecard.getIndexOfField2());
-    assertEquals("Romulo", movecard.getBattleField1().showCard(0).getCardName());
-    assertEquals("Bloodfen Raptor", movecard.getBattleField2().showCard(0).getCardName());
-    assertEquals(2, movecard.getBattleField2().showCard(0).getDefensePoints());
-    movecard.execute();
+    ExecuteAttackCardMove executeMove = new ExecuteAttackCardMove(movecard);
+    executeMove.execute();
     assertEquals(-2, movecard.getBattleField2().showCard(0).getDefensePoints());
-    assertEquals(-2, bloodfenRaptor.getDefensePoints());
   }
-
+  
   public void setUp()
   {
       field1 = new BattleField();
@@ -28,5 +23,4 @@ public class MoveAttackCardTest extends TestCase{
       field1.addCard(0,romulo);
       field2.addCard(0,bloodfenRaptor);
   }
-
 }

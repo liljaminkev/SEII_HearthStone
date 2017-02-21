@@ -1,3 +1,5 @@
+package test.gameassets;
+
 import junit.framework.TestCase;
 public class ExecutePlaceMoveTest extends TestCase{
   BattleField field1;
