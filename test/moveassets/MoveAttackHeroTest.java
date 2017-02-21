@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test.moveassets;
+package moveassets;
 import cards.Card;
 import cards.hearthstone.BloodfenRaptor;
-import cards.hearthstone.Romulo;
 import hero.Hero;
 import hero.hearthstone.Jaina;
 import junit.framework.TestCase;
-import moveassets.*;
-import playerassets.BattleField;
 
 /**
  *
