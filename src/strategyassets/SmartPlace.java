@@ -9,7 +9,7 @@ import cards.Card;
 //smart move to return offensive moves
 public class SmartPlace implements Strategy
 {
-    public int getLegalMove(Player playerA)
+    public Move getLegalMove(Player playerA)
     {
 //        Move smartPlace = new Move();
         Move smartPlace = new MovePlaceCard();
@@ -21,7 +21,7 @@ public class SmartPlace implements Strategy
 
         //check if battlefield is full
         if (playerDeck.getNumCards()==7)
-            return -1;
+            return null;
 
         //get the index of battlefield
         cardIndex=playerDeck.getNumCards();
@@ -42,6 +42,6 @@ public class SmartPlace implements Strategy
         }
         }while(cardIndex!=7)
 
-        return 1;
+        return smartPlace;
     }
 }
