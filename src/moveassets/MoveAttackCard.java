@@ -1,5 +1,8 @@
+//this move represents an attack form field a to field b
 package moveassets;
 import playerassets.*;
+import playerassets.Cards;
+import cards.Card;
 public class MoveAttackCard extends Move{
 
   public MoveAttackCard(int fieldIndexA, int fieldIndexB, BattleField fieldA, BattleField fieldB)
@@ -13,7 +16,8 @@ public class MoveAttackCard extends Move{
   //attack from field 1 to field 2
   public void execute()
   {
-      battleField2.showcard(indexOnField2).setdefence  battleField1.showcard
+      battleField2.showCard(indexOnField2).setDefensePoints(battleField2.showCard(indexOnField2).getDefensePoints() -
+      battleField1.showCard(indexOnField1).getAttackPoints());
   }
 
 }
