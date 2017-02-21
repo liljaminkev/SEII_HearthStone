@@ -1,12 +1,9 @@
 //this move represents an attack form field a to field b
 package moveassets;
 import playerassets.*;
-<<<<<<< HEAD
 import playerassets.Cards;
 import cards.Card;
 
-=======
->>>>>>> parent of 2cc2448... test
 public class MoveAttackCard extends Move{
 
   public MoveAttackCard(int fieldIndexA, int fieldIndexB, BattleField fieldA, BattleField fieldB)

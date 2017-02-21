@@ -1,3 +1,5 @@
+package strategyassets.Misc;
+
 public class ExecuteAttackCardMove implements Command {
   Move atkMove;
   

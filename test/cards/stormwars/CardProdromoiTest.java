@@ -1,5 +1,5 @@
 //used to test card
-package test.card.stormwars;
+package test.cards.stormwars;
 import card.CardProdromoi;
 import junit.framework.TestCase;
 public class CardProdromoiTest extends TestCase
