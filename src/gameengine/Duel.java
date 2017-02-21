@@ -1,6 +1,6 @@
 package gameengine;
 
-import player.Player;
+import playerassets.Player;
 import java.util.List;
 
 /**

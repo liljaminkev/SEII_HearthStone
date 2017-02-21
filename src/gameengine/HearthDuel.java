@@ -6,7 +6,7 @@ package gameengine;
  * and open the template in the editor.
  */
 
-import playerasset.Player;
+import playerassets.Player;
 import cards.Card;
 import java.util.List;
 

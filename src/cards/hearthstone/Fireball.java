@@ -1,5 +1,5 @@
 package cards.hearthstone;
-import abilities.hearthstone.DamageAttack;
+import cards.hearthstone.abilities.DamageAttack;
 import cards.Card;
 
 //Fireball will deal 6 damage to the PlayerHero

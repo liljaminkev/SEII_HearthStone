@@ -1,9 +1,8 @@
 package moveassets;
-import moveassets.MoveAttackCard;
-import cards.*;
-import cards.hearthstone.*;
-import playerassets.*;
+import cards.Card;
 import junit.framework.TestCase;
+import playerassets.BattleField;
+import playerassets.Hand;
 
 public class MovePlaceCard extends Move{
   public MovePlaceCard(Hand hand, Card card, int index, BattleField battleField)
