@@ -1,9 +1,10 @@
-package test.moveassets;
+package moveassets;
 import moveassets.MoveAttackCard;
 import cards.*;
 import cards.hearthstone.*;
 import playerassets.*;
 import junit.framework.TestCase;
+import org.junit.BeforeClass;
 public class MoveAttackCardTest extends TestCase{
   BattleField field1;
   BattleField field2;
@@ -22,7 +23,8 @@ public class MoveAttackCardTest extends TestCase{
     assertEquals(-2, bloodfenRaptor.getDefensePoints());
   }
 
-  public void setUp()
+  @BeforeClass
+  public void BeforeClass()
   {
       field1 = new BattleField();
       field2 = new BattleField();
