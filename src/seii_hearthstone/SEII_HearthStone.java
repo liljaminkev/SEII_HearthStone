@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cardgame;
+package seii_hearthstone;
 
 /**
  *
  * @author Kevin
  */
-public class CardGame {
+public class SEII_HearthStone {
 
     /**
      * @param args the command line arguments
