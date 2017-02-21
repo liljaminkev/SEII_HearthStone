@@ -1,4 +1,4 @@
-package test.abilities.hearthstone;
+package abilities.hearthstone;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

@@ -1,4 +1,4 @@
-package cards.hearthstone.abilities;
+package card.abilities.hearthstone;
 
 //ability is used to damage the hero
 

@@ -1,11 +1,13 @@
 package hero;
 public abstract class Hero {
+    private String heroName;
     private int healthPoints = 0;
     private int armorPoints = 0;
     private int attackPower = 0;
 
-    public Hero(int healthPoints){
+    public Hero(String name, int healthPoints){
         this.healthPoints = healthPoints;
+        heroName = name;
     }
 
     //setters
@@ -20,6 +22,10 @@ public abstract class Hero {
 
     public void setHealthPoints(int ammount){
         healthPoints = ammount;
+    }
+    
+    public void setHeroName(String name){
+        heroName = name;
     }
 
 

@@ -1,4 +1,5 @@
 package moveassets;
+import playerassets.*;
 import cards.Card;
 import hero.Hero;
 

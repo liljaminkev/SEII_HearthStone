@@ -1,4 +1,4 @@
-package cards.hearthstone.abilities;
+package card.abilities.hearthstone;
 import player.Player;
 import cards.Card;
 import abilities.SpecialAbility;
