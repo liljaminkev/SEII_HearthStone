@@ -10,7 +10,6 @@ import cards.hearthstone.Romulo;
 import hero.Hero;
 import hero.hearthstone.Jaina;
 import junit.framework.TestCase;
-import moveassets.*;
 import playerassets.BattleField;
 
 /**

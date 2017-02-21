@@ -1,5 +1,4 @@
 package test.gameengine;
-import cards.hearthstone.*;
 import gameengine.ConsoleDisplay;
 import junit.framework.TestCase;
 public class ConsoleDisplayTest extends TestCase{

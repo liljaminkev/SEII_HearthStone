@@ -9,39 +9,43 @@ import cards.Card;
 //smart move to return offensive moves
 public class SmartPlace implements Strategy
 {
+    //Places mob with highest atk power and  count that is <= player
+    //returns -1 if no cards to play
+    //else 1
     public int getLegalMove(Player playerA)
     {
-//        Move smartPlace = new Move();
-        Move smartPlace = new MovePlaceCard();
+        int highestAttackPower = -1;
+        int highestCrystalCount = -1;
+        Move smartPlace = new Move();
         Deck playerDeck = playerA.getDeck();
         Hand playerHand = playerA.getHand();
+        int highestIndex = -1;
         Card card;
-        int cardcost=0;
-        int cardIndex=0;
 
-        //check if battlefield is full
-        if (playerDeck.getNumCards()==7)
-            return -1;
+        //player loses if has no cards to play or draw
+        if(playerHand.getNumCards() == 0 && playerDeck.getNumCards() == 0)
+        return -1;
 
-        //get the index of battlefield
-        cardIndex=playerDeck.getNumCards();
-
-        //loop cards in hand
-        do {
-        for(int counter=0; counter < playerHand.getNumCards(); counter++)
+        if(playerHand.getNumCards() != 0)
         {
-            card=playerHand.showCard(counter);
-
-            //if cardCost==0, put card in the battlefield
-            if (card.getCardCost()==0)
+            for(int cardIndex = 0; cardIndex < playerHand.getNumCards(); cardIndex++)
             {
-                smartPlace.placeCard(playerHand,card,cardIndex,playerA.getBattleField());
-                cardIndex++;
+                card = playerHand.showCard(cardIndex);
+                if (card.getAttackPoints() > highestAttackPower && card.getGemCost() <= playerA.getCurrentCrystals())
+                {
+                    highestAttackPower = card.getAttackPoints();
+                    highestIndex = cardIndex;
+                }
+            }
+            if (highestIndex > -1)
+            {
+                smartPlace.placeCard(playerHand, highestIndex, playerA.getBattleField(), 0);
+                return 1;
             }
 
         }
-        }while(cardIndex!=7)
 
-        return 1;
+
+        return 0;
     }
 }
