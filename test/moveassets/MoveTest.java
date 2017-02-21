@@ -1,5 +1,6 @@
-package test.moveassets;
+package tests.moveassets;
 import moveassets.Move;
+import playerassets.*;
 import junit.framework.TestCase;
 public class MoveTest extends TestCase
 {

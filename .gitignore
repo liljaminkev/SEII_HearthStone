@@ -1,1 +1,12 @@
+<<<<<<< HEAD
+*.class
+*.properties
+=======
 
+*.class
+*.properties
+*.xml
+.DS_Store
+*.properties
+*.mf
+>>>>>>> parent of 3d0e9b6... test

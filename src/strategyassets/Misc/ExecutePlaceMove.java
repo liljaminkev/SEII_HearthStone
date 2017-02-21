@@ -1,5 +1,3 @@
-package strategyassets.Misc;
-
 public class ExecutePlaceMove implements Command {
   Move placeMove;
   

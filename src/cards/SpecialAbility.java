@@ -1,5 +1,6 @@
 package cards;
 import playerassets.Player;
+import cards.Card;
 
 public interface SpecialAbility
 {

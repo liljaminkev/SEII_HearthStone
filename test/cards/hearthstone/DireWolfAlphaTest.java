@@ -1,5 +1,6 @@
 package test.cards.hearthstone;
 
+import cards.hearthstone.*;
 import junit.framework.TestCase;
 public class DireWolfAlphaTest extends TestCase
 {

@@ -6,6 +6,8 @@ import moveassets.Move;
 //interface that returns a move
 public abstract class Strategy
 {
+
     public Move getLegalMove(Player playerA){return null;}
     public Move getLegalMove(Player playerA, Player playerB){return null;}
+
 }

@@ -1,5 +1,3 @@
-package strategyassets.Misc;
-
 import junit.framework.TestCase;
 public class ExecuteAttackCardMoveTest extends TestCase{
   BattleField field1;
