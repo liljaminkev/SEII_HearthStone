@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.util.ArrayList;
 import playerassets.Player;
 
 /**
@@ -27,14 +28,14 @@ public class LoadGameState {
      * @throws ClassNotFoundException
      * Loads from a specified save file
      */
-    public static Player[] loadGame(String fileName) throws FileNotFoundException, IOException, ClassNotFoundException{
-        Player[2] players;
+    public static ArrayList<Player> loadGame(String fileName) throws FileNotFoundException, IOException, ClassNotFoundException{
+        ArrayList<Player> players = null;
         
         try (FileInputStream fin = new FileInputStream(fileName); 
                 ObjectInputStream ois = new ObjectInputStream(fin)) {
             
-            players[0] = (Player) ois.readObject();
-            players[1] = (Player) ois.readObject();
+            players.add((Player) ois.readObject());
+            players.add((Player) ois.readObject());
             
         }
         
