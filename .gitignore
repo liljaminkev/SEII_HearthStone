@@ -1,4 +1,5 @@
 *.class
 *.properties
-/nbproject/private/
-/build/
+nbproject/private/
+build/ 
+
