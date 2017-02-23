@@ -30,7 +30,7 @@ public class SaveGameState {
         try ( //Create a text file to save the game data
                 FileOutputStream fout = new FileOutputStream(fileName); ObjectOutputStream oos = new ObjectOutputStream(fout)) {
             oos.writeObject(p1);
-            ObjectOutputStream writeObject = oos.writeObject(p2);
+            oos.writeObject(p2);
             //Save the game data to the file
         }
         
