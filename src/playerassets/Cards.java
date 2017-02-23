@@ -4,7 +4,7 @@ import java.util.List;
 import cards.Card;
 public abstract class Cards
 {
-    private List<Card> cards;
+    protected List<Card> cards;
 
     public Cards()
     {
@@ -35,7 +35,7 @@ public abstract class Cards
         return cards.size();
     }
 
-
+    // Removes a card from the available card list
     public void removeCard(Card cardObject)
     {
       cards.remove(cardObject);
