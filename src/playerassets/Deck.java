@@ -4,6 +4,11 @@ import java.util.*;
 import cards.Card;
 import java.io.Serializable;
 public class Deck extends Cards implements Serializable{
+    
+    public Deck(){
+        super();
+    }
+    
     public Card drawCard()
     {
         Card returnCard;
