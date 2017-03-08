@@ -1,4 +1,4 @@
-package test.cards.hearthstone;
+package cards.hearthstone;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -6,11 +6,6 @@ package test.cards.hearthstone;
  * and open the template in the editor.
  */
 
-import cards.BluegillWarrior;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -20,10 +15,11 @@ import static org.junit.Assert.*;
  */
 public class BluegillWarriorTest {
     BluegillWarrior bgWarrior = new BluegillWarrior();
-
+    
+    @Test
     public void testAttack()
     {
-      assertEquals(1, bgWarrior.getAttackPoints());
+      assertEquals(2, bgWarrior.getAttackPoints());
     }
 
     public void testDef()
