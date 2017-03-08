@@ -1,12 +1,11 @@
-package test.moveassets;
+package moveassets;
 
-import strategyassets.*;
 import playerassets.*;
-import moveassets.*;
 import hero.Hero;
 import hero.hearthstone.Jaina;
 import cards.hearthstone.*;
 import junit.framework.TestCase;
+import org.junit.BeforeClass;
 
 public class MovePlaceCardTest extends TestCase{
     Move movePlaceCard;
@@ -30,8 +29,8 @@ public class MovePlaceCardTest extends TestCase{
         //test after execution
         assertEquals(2, player.getHand().getNumCards());
     }
-
-    public void setUp()
+    @BeforeClass
+    public void BeforeClass()
     {
         deck = new Deck();
         hand = new Hand();

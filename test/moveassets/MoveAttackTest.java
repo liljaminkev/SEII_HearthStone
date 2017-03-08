@@ -1,4 +1,4 @@
-package test.moveassets;
+package moveassets;
 
 
 

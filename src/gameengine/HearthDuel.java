@@ -9,6 +9,7 @@ package gameengine;
 import playerassets.Player;
 import cards.Card;
 import java.util.List;
+import playerassets.PlayerHearthStone;
 
 /**
  *
@@ -38,18 +39,18 @@ public class HearthDuel extends Duel{
 
      @Override
      protected void beforeTurn(){
-        Player player = players.get(currentPlayer);
+        PlayerHearthStone player = (PlayerHearthStone) players.get(currentPlayer);
 
         //Set player mana for current round
         player.incCrystals();
         player.setCurrentCrystals(player.getCrystals());
 
         //Add a new card to the players hand from the deck
-        player.getHand().addCard(player.getDeck().returnTopCard());
+        player.getHand().addCard(player.getDeck().drawCard());
 
         //Print cards on the battle field
         System.out.println("Field Cards:");
-        for(Card inField : player.getBattleField().returnBattleField()){
+        for(Card inField : player.getBattleField().getBattleFieldList()){
             System.out.println(inField.toString());
         }
         System.out.println("End field cards.");
