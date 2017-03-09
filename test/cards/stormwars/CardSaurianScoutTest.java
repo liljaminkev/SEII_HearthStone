@@ -3,30 +3,38 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test.cards.stormwars;
-import cards.stormwars.CardSaurianScout;
+package cards.stormwars;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.Before;
 
 /**
  *
- * @author James
+ * @author Kevin
  */
 public class CardSaurianScoutTest {
-    CardSaurianScout scout;
+    CardSaurianScout scout = new CardSaurianScout();
     public CardSaurianScoutTest() {
-        //Test the attack power
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+
+    @Test
+    public void testCard() {
+           //Test the attack power
         assertEquals(1, scout.getAttackPoints());
         //Test the defense
         assertEquals(6, scout.getDefensePoints());
         //Test the cost
         assertEquals(4, scout.getCardCost());
-
     }
-
-    @Before
-    public void setUp() {
-        scout = new CardSaurianScout();
-    }
-
+    
 }

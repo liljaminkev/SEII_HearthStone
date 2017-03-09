@@ -5,12 +5,8 @@
  */
 package cards.stormwars;
 
-import cards.Card;
 import cards.stormwars.CardSlinger;
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -20,7 +16,9 @@ import static org.junit.Assert.*;
  */
 public class CardSlingerTest {
     CardSlinger slinger;
-    public CardSlingerTest() {
+    
+    @Test
+    public void testCardSlinger() {
         //Test the attack power
         assertEquals(1, slinger.getAttackPoints());
         //Test the defense
