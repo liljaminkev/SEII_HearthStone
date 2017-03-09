@@ -1,8 +1,8 @@
 //used to test card
-package test.card.stormwars;
-import card.CardProdromoi;
-import junit.framework.TestCase;
-public class CardProdromoiTest extends TestCase
+package cards.stormwars;
+
+import static org.junit.Assert.*;
+public class CardProdromoiTest //extends TestCase
 {
     CardProdromoi prodromoi = new CardProdromoi();
 
@@ -18,7 +18,7 @@ public class CardProdromoiTest extends TestCase
 
     public void testTimeCost()
     {
-        assertEquals(1, prodromoi.getTimeCost());
+        assertEquals(1, prodromoi.getCardCost());
     }
 
 }
