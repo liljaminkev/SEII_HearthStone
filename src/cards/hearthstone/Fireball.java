@@ -8,6 +8,6 @@ public class Fireball extends Card {
     public Fireball()
     {
         super("Fireball", 6, 0, 4);
-        specialAbility = new DamageAttack();
+        this.setSpecialAbility(new DamageAttack());
     }
 }
