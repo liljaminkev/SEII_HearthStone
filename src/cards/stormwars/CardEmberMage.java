@@ -16,7 +16,7 @@ import hero.Hero;
 public class CardEmberMage extends Card{
     
     public CardEmberMage(){
-        super("Ember Mage", 0, 4, 4, 2);
+        super("Ember Mage", 4, 4, 2);
     }
     
     /**

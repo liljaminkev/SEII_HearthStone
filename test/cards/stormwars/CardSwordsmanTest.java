@@ -1,8 +1,9 @@
 //tests elite card
-package tests.cards.stormwars;
-import card.CardSwordsman;
-import junit.framework.TestCase;
-public class CardSwordsmanTest extends TestCase
+package cards.stormwars;
+
+import static org.junit.Assert.*; 
+
+public class CardSwordsmanTest //extends TestCase
 {
     CardSwordsman swordsmanCard = new CardSwordsman();
 
@@ -18,7 +19,7 @@ public class CardSwordsmanTest extends TestCase
 
     public void testTimeCost()
     {
-        assertEquals(5, swordsmanCard.getTimeCost());
+        assertEquals(5, swordsmanCard.getCardCost());
     }
 
 }
