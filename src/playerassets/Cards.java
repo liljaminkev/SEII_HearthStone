@@ -2,8 +2,8 @@ package playerassets;
 import java.util.ArrayList;
 import java.util.List;
 import cards.Card;
-public abstract class Cards
-{
+import java.io.Serializable;
+public abstract class Cards implements Serializable {
     protected List<Card> cards;
 
     public Cards()

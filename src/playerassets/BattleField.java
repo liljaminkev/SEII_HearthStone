@@ -3,9 +3,10 @@ package playerassets;
 //battle field represents the player's cards in play
 
 import cards.Card;
+import java.io.Serializable;
 import java.util.List;
 
-public class BattleField extends Cards{
+public class BattleField extends Cards implements Serializable{
     
     public BattleField(){
         super();

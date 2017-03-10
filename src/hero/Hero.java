@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public abstract class Hero implements Serializable{
     String heroName;
-    transient private int healthPoints = 0;
-    transient private int armorPoints = 0;
-    transient private int attackPower = 0;
+    private int healthPoints = 0;
+    private int armorPoints = 0;
+    private int attackPower = 0;
 
     public Hero(String heroName, int healthPoints){
         this.healthPoints = healthPoints;

@@ -28,7 +28,8 @@ public class SaveGameState {
      */
     public static void saveFile(Player p1, Player p2, String fileName) throws FileNotFoundException, IOException{
         try ( //Create a text file to save the game data
-                FileOutputStream fout = new FileOutputStream(fileName); ObjectOutputStream oos = new ObjectOutputStream(fout)) {
+            FileOutputStream fout = new FileOutputStream(fileName);
+            ObjectOutputStream oos = new ObjectOutputStream(fout)) {
             oos.writeObject(p1);
             oos.writeObject(p2);
             //Save the game data to the file
