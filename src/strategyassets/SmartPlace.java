@@ -6,6 +6,7 @@ import playerassets.Hand;
 import playerassets.Deck;
 import cards.Card;
 import moveassets.Move;
+import moveassets.MovePlaceCard;
 
 
 /* //this code has been moved to strat smart place
@@ -45,7 +46,7 @@ public class SmartPlace extends Strategy
             }
 
         }
-        }while(cardIndex!=7)
+        }while(cardIndex!=7);
 
         return smartPlace;
     }

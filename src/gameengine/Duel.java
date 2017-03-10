@@ -27,7 +27,9 @@ public abstract class Duel {
                 beforeTurn();
                 // Give a Move a reference to game information
                 // so it can access the necessary functionality
+
                 player.pickMove(players).execute();
+
                 afterTurn();
             }
         }

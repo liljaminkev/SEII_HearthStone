@@ -1,11 +1,17 @@
 package strategyassets;
 
+import moveassets.Move;
 import playerassets.Player;
 
 //smart move to return offensive moves
 public class SmartMove extends Strategy
 {/*
+=======
+{
+>>>>>>> origin/master
     //returns card with lowest wait time
+    /*
+    @Override
     public int getLegalMove(Player playerA)
     {
         int lowestWaitTime = 100;
@@ -29,4 +35,5 @@ public class SmartMove extends Strategy
         return SmartMove;
         
     }*/
+
 }
