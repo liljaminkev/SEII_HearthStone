@@ -2,10 +2,9 @@ package strategyassets.Misc;
 
 import cards.hearthstone.BloodfenRaptor;
 import cards.hearthstone.Romulo;
-import junit.framework.TestCase;
 import moveassets.MoveAttackCard;
 import playerassets.BattleField;
-public class ExecuteAttackCardMoveTest extends TestCase{
+public class ExecuteAttackCardMoveTest{
   BattleField field1;
   BattleField field2;
   BloodfenRaptor bloodfenRaptor;
@@ -15,7 +14,7 @@ public class ExecuteAttackCardMoveTest extends TestCase{
     MoveAttackCard movecard = new MoveAttackCard(0, 0, field1, field2);
     ExecuteAttackCardMove executeMove = new ExecuteAttackCardMove(movecard);
     executeMove.execute();
-    assertEquals(-2, movecard.getBattleField2().showCard(0).getDefensePoints());
+    assert(-2 == movecard.getBattleField2().showCard(0).getDefensePoints());
   }
   
   public void setUp()
