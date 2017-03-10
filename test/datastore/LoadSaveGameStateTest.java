@@ -10,7 +10,10 @@ import playerassets.*;
 import hero.*;
 import hero.hearthstone.*;
 import hero.stormwars.*;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -27,30 +30,31 @@ public class LoadSaveGameStateTest {
     Hero h1, h2;
     Deck d1, d2;
     Hand ha1, ha2;
-    ArrayList<Player> fromFile = null;
+    List<Player> fromFile;
 
     
-    public LoadSaveGameStateTest() {
+    public LoadSaveGameStateTest() throws IOException, FileNotFoundException, ClassNotFoundException {
+        this.fromFile = null;
         SaveGameState.saveFile(p1, p2, "testSaveFile.txt");
-        fromFile = new AraryList<Player>();
+        fromFile = new ArrayList<>();
         fromFile = LoadGameState.loadGame("testSaveFile.txt");
         
-        assertEquals("Jaina" == fromFile.get(0).getName());
-        assertEquals("Laertes" == fromFile.get(1).getName());
+        assert("Jaina".equals(fromFile.get(0).getHero().getName()));
+        assert("Laertes".equals(fromFile.get(1).getHero().getName()));
         
         
     }
     
     @Before
     public void setUp() {
-        p1 = new PlayerHearthStone();
-        p2 = new PlayerStormWars();
         h1 = new Jaina();
-        h2 = new Laertes();
+        h2 = new HeroLaertes();
         d1 = new Deck();
         d2 = new Deck();
         ha1 = new Hand();
         ha2 = new Hand();
+        p1 = new PlayerHearthStone(h1, d1, ha1);
+        p2 = new PlayerStormWars(h2, d2, ha2);
         
     }
     

@@ -7,6 +7,10 @@ public abstract class Hero implements Serializable{
     transient private int healthPoints = 0;
     transient private int armorPoints = 0;
     transient private int attackPower = 0;
+    
+    public String getName(){
+        return this.heroName;
+    }
 
     public Hero(String heroName, int healthPoints){
         this.healthPoints = healthPoints;
