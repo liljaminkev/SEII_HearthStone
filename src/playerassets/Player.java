@@ -7,7 +7,7 @@ public abstract class Player implements Serializable{
     private Hero hero;
     private Deck deck;
     private Hand hand;
-    transient private BattleField field;
+    private BattleField field;
 
     public Player(Hero hero, Deck deck, Hand hand) {
         this.hero = hero;

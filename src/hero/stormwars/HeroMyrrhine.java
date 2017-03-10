@@ -6,12 +6,13 @@
 package hero.stormwars;
 
 import hero.Hero;
+import java.io.Serializable;
 
 /**
  *
  * @author rodney
  */
-public class HeroMyrrhine extends Hero{
+public class HeroMyrrhine extends Hero implements Serializable{
     public HeroMyrrhine(){
         super("Myrrhine", 20);
     }

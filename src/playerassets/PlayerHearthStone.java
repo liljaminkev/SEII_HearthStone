@@ -1,6 +1,7 @@
 package playerassets;
 import hero.Hero;
-public class PlayerHearthStone extends Player {
+import java.io.Serializable;
+public class PlayerHearthStone extends Player implements Serializable{
     private static final int MAXCRYSTALS = 5;
     private int crystals;
     private int currentCrystalCount;
