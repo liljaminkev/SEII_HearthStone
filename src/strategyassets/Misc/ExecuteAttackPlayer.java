@@ -11,10 +11,11 @@ public class ExecuteAttackPlayer implements Command {
     this.atkMove = move;
   }
   
+  
   public void execute()
   {
     int hp;
-    hp = atkMove.getPlayer().getHero().getHealthPoints() - atkMove.getCardToBeUsed().getAttackPoints();
-    atkMove.getPlayer().getHero().damageHealth(hp);
+    hp = atkMove.getHeroBeingAttacked().getHealthPoints() - atkMove.getCardToBeUsed().getAttackPoints();
+    atkMove.getHeroBeingAttacked().setHealthPoints(hp);
   }
 }

@@ -6,9 +6,10 @@ import playerassets.Hand;
 import playerassets.Deck;
 import cards.Card;
 import moveassets.Move;
+import moveassets.MovePlaceCard;
 
 //smart move to return offensive moves
-public class SmartPlace implements Strategy
+public class SmartPlace extends Strategy
 {
     public Move getLegalMove(Player playerA)
     {
@@ -41,7 +42,7 @@ public class SmartPlace implements Strategy
             }
 
         }
-        }while(cardIndex!=7)
+        }while(cardIndex!=7);
 
         return smartPlace;
     }

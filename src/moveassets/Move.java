@@ -63,4 +63,12 @@ public abstract class Move {
       battleFieldB.showCard(battleFieldIndexB);
   }*/
 
+    public void placeCard(Hand playerHand, Card card, int cardIndex, BattleField battleField) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Object getPlayer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
