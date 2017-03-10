@@ -1,5 +1,5 @@
 package strategyassets.Misc;
-
+/* --------not being used
 import moveassets.Move;
 import strategyassets.Command;
 
@@ -18,3 +18,4 @@ public class ExecuteAttackPlayer implements Command {
     atkMove.getPlayer().getHero().damageHealth(hp);
   }
 }
+*/

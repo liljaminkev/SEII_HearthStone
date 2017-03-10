@@ -13,9 +13,10 @@ public class MoveAttackCard extends Move{
   }
 
   //attack from field 1 to field 2
+  @Override
   public void execute()
   {
-      battleField2.showcard(indexOnField2).setdefence  battleField1.showcard
+      battleField2.showCard(indexOnField2).setDefensePoints(battleField2.showCard(indexOnField2).getDefensePoints() - battleField1.showCard(indexOnField1).getAttackPoints());
   }
 
 }

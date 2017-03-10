@@ -5,23 +5,19 @@ import playerassets.Player;
 import playerassets.Hand;
 import playerassets.Deck;
 import cards.Card;
+import moveassets.MovePlaceCard;
 import moveassets.Move;
 
-
-/* //this code has been moved to strat smart place
-
-
 //smart move to return offensive moves
-public class SmartPlace extends Strategy
+public class StrategySmartPlace extends Strategy
 {
     public Move getLegalMove(Player playerA)
     {
-//        Move smartPlace = new Move();
-        Move smartPlace = new MovePlaceCard();
         Deck playerDeck = playerA.getDeck();
         Hand playerHand = playerA.getHand();
+        Move movePlaceCard = null;
         Card card;
-        int cardcost=0;
+        int cardCost=0;
         int cardIndex=0;
 
         //check if battlefield is full
@@ -40,14 +36,18 @@ public class SmartPlace extends Strategy
             //if cardCost==0, put card in the battlefield
             if (card.getCardCost()==0)
             {
-                smartPlace.placeCard(playerHand,card,cardIndex,playerA.getBattleField());
+                movePlaceCard = new MovePlaceCard(playerHand,card,cardIndex,playerA.getBattleField());
                 cardIndex++;
             }
 
         }
-        }while(cardIndex!=7)
+        }while(cardIndex!=7);
 
-        return smartPlace;
+        return movePlaceCard;
+    }
+
+    @Override
+    public Move getLegalMove(Player playerA, Player playerB) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
-*/

@@ -10,7 +10,7 @@ package strategyassets;
  *
  * @author rodney
  */
-public class DefenseStrategy implements Strategy{
+public class DefenseStrategy extends Strategy{
     /*
     @Override
     public Move move(){

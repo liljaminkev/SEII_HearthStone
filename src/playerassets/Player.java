@@ -1,6 +1,8 @@
 package playerassets;
 import hero.Hero;
 import java.io.Serializable;
+import java.util.List;
+import moveassets.Move;
 public abstract class Player implements Serializable{
     private Hero hero;
     private Deck deck;
@@ -44,5 +46,16 @@ public abstract class Player implements Serializable{
 
     public void setField(BattleField field) {
         this.field = field;
+    }
+    
+    //take game state
+    //ask for strat type
+    //return move
+    public Move pickMove(List<Player> players){
+        Move move = null;
+        
+        
+        
+        return move;
     }
 }

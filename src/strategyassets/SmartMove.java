@@ -3,11 +3,11 @@ package strategyassets;
 import playerassets.Player;
 
 //smart move to return offensive moves
-public class SmartMove implements Strategy
-{
+public class SmartMove extends Strategy
+{/*
     //returns card with lowest wait time
     public int getLegalMove(Player playerA)
-    {/*
+    {
         int lowestWaitTime = 100;
         Move SmartMove = new Move();
         WaitArea testField = null;
@@ -27,6 +27,6 @@ public class SmartMove implements Strategy
         testField = SmartMove.move(playerA, cardIndex);
 
         return SmartMove;
-        */
-    }
+        
+    }*/
 }
